@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comentarios en: Registro Civil vuelve a la atención presencial desde el 15 de enero	</title>
+	<atom:link href="http://localhost/registro-civil-vuelve-a-la-atencion-presencial-desde-el-15-de-enero/feed/?simply_static_page=193" rel="self" type="application/rss+xml" />
+	<link>/registro-civil-vuelve-a-la-atencion-presencial-desde-el-15-de-enero/</link>
+	<description></description>
+	<lastBuildDate>Sun, 28 Jan 2024 01:01:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<item>
+		<title>
+		Por: oromartv		</title>
+		<link>/registro-civil-vuelve-a-la-atencion-presencial-desde-el-15-de-enero/#comment-40</link>
+
+		<dc:creator><![CDATA[oromartv]]></dc:creator>
+		<pubDate>Sun, 28 Jan 2024 01:01:45 +0000</pubDate>
+		<guid isPermaLink="false">https://oromartv.com/?p=95595#comment-40</guid>
+
+					<description><![CDATA[Este es un comentario padre]]></description>
+			<content:encoded><![CDATA[<p>Este es un comentario padre</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

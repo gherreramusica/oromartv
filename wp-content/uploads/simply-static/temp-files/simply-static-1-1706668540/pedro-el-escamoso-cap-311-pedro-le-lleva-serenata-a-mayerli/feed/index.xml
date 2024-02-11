@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comentarios en: Pedro el Escamoso &#124; Cap 311 &#124; Pedro le lleva serenata a Mayerli	</title>
+	<atom:link href="http://localhost/pedro-el-escamoso-cap-311-pedro-le-lleva-serenata-a-mayerli/feed/?simply_static_page=133" rel="self" type="application/rss+xml" />
+	<link>/pedro-el-escamoso-cap-311-pedro-le-lleva-serenata-a-mayerli/</link>
+	<description></description>
+	<lastBuildDate>Sun, 28 Jan 2024 02:38:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<item>
+		<title>
+		Por: oromartv		</title>
+		<link>/pedro-el-escamoso-cap-311-pedro-le-lleva-serenata-a-mayerli/#comment-41</link>
+
+		<dc:creator><![CDATA[oromartv]]></dc:creator>
+		<pubDate>Sun, 28 Jan 2024 02:38:59 +0000</pubDate>
+		<guid isPermaLink="false">https://oromartv.com/?p=95523#comment-41</guid>
+
+					<description><![CDATA[Esto es un comentario padre]]></description>
+			<content:encoded><![CDATA[<p>Esto es un comentario padre</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

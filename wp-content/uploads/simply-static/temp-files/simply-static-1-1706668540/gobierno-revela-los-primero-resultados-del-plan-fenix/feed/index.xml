@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comentarios en: Gobierno revela los primero resultados del Plan Fénix	</title>
+	<atom:link href="http://localhost/gobierno-revela-los-primero-resultados-del-plan-fenix/feed/?simply_static_page=301" rel="self" type="application/rss+xml" />
+	<link>/gobierno-revela-los-primero-resultados-del-plan-fenix/</link>
+	<description></description>
+	<lastBuildDate>Tue, 30 Jan 2024 09:30:42 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+</channel>
+</rss>
