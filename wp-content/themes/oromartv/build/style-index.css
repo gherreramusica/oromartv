@@ -69,6 +69,11 @@ body{
     font-weight: 200;
   
 }
+.login{
+    background-color: var(--secondary-color)!important; 
+    display: grid;
+    place-content: center;
+}
 body.admin-bar {
     margin-top: 0 !important;
 }
@@ -3321,9 +3326,7 @@ span{
 }
 /* LOGIN FORM */
 
-.login{
-    background-color: var(--secondary-color);
-}
+
 
 #login h1 a, .login h1 a {
     
@@ -3332,11 +3335,7 @@ span{
     background-repeat: no-repeat;
     padding-bottom: 50px;
   }
-.login{
-    background-color: var(--secondary-color); 
-    display: grid;
-    place-content: center;
-}
+
 .login #nav a{
     color: #ffffff;
 }

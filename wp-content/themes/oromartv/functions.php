@@ -1,12 +1,13 @@
 <?php
 
 function mortal_theme() {
+        // Estilos icons CSS
+        wp_enqueue_style( 'icon-style', get_theme_file_uri('/build/index.css'));
     
     // Estilos Principal CSS
     wp_enqueue_style( 'style', get_theme_file_uri('/build/style-index.css'));
 
-    // Estilos icons CSS
-    wp_enqueue_style( 'icon-style', get_theme_file_uri('/build/index.css'));
+
 
     // Estilos Swiper CSS
     wp_enqueue_style( 'swiper-style', get_theme_file_uri('/css/swiper-bundle.min.css'));
@@ -99,8 +100,8 @@ function ourHeaderurl() {
 add_action('login_enqueue_scripts', 'ourLoginCSS');
 
 function ourLoginCSS(){
-    wp_enqueue_style( 'style', get_theme_file_uri('/style.css'));
-    wp_enqueue_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' );
+    wp_enqueue_style( 'style', get_theme_file_uri('/build/style-index.css'));
+    
     wp_enqueue_style( 'style-css', get_theme_file_uri('/package/swiper-bundle.min.css'));
 }
 
