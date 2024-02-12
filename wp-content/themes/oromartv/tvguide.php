@@ -8,119 +8,119 @@ $programas = array(
             'hora_inicio' => '06:00',
             'descripcion' => 'Los sucesos más importantes del Ecuador desde tempranito con Willy Quinde',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/DESDE-TEMPRANITO.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/DESDE-TEMPRANITO.jpg',
         ),
         array(
             'nombre' => 'Noticias Oromar',
             'hora_inicio' => '07:00',
             'descripcion' => 'Las noticias más importantes de Ecuador y el mundo con Katty Vera y Pedro Clotario',
             'duracion' => 45,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/NOTICIAS-OROMAR-KATTY-Y-PEDRO.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/NOTICIAS-OROMAR-KATTY-Y-PEDRO.jpg',
         ),
         array(
             'nombre' => 'Ranger',
             'hora_inicio' => '08:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/WALKER.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/WALKER.jpg',
         ),
         array(
             'nombre' => 'Ranger',
             'hora_inicio' => '09:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/WALKER.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/WALKER.jpg',
         ),
         array(
             'nombre' => 'La quiero a morir',
             'hora_inicio' => '10:00',
             'descripcion' => 'Una historia llena de drama y romance',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/LA-QUIERO-A-MORIR.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/LA-QUIERO-A-MORIR.jpg',
         ),
         array(
             'nombre' => 'Acorralada',
             'hora_inicio' => '11:00',
             'descripcion' => 'Desde Venezuela, el clásico Acorralada con William Levy',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/ACORRALADA.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/ACORRALADA.jpg',
         ),
         array(
             'nombre' => 'Noticias Oromar',
             'hora_inicio' => '12:00',
             'descripcion' => 'Las Noticias del Ecuador y el mundo',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/NOTICIAS-OROMAR-MARIA-JOSE-PINOARGOTE.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/NOTICIAS-OROMAR-MARIA-JOSE-PINOARGOTE.jpg',
         ),
         array(
             'nombre' => 'Chaparral',
             'hora_inicio' => '13:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/EL-GRAN-CHAPARRAL.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/EL-GRAN-CHAPARRAL.jpg',
         ),
         array(
             'nombre' => 'Chaparral',
             'hora_inicio' => '14:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/EL-GRAN-CHAPARRAL.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/EL-GRAN-CHAPARRAL.jpg',
         ),
         array(
             'nombre' => 'Bonanza',
             'hora_inicio' => '15:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/BONANZA.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/BONANZA.jpg',
         ),
         array(
             'nombre' => 'Bonanza',
             'hora_inicio' => '16:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/BONANZA.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/BONANZA.jpg',
         ),
         array(
             'nombre' => 'Ranger de Texas',
             'hora_inicio' => '17:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/WALKER.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/WALKER.jpg',
         ),
         array(
             'nombre' => 'Ranger de Texas',
             'hora_inicio' => '18:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/WALKER.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/WALKER.jpg',
         ),
         array(
             'nombre' => 'Duele Amar',
             'hora_inicio' => '19:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/DUELE-AMAR.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/DUELE-AMAR.jpg',
         ),
         array(
             'nombre' => 'Duele Amar',
             'hora_inicio' => '20:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/DUELE-AMAR.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/DUELE-AMAR.jpg',
         ),
         array(
             'nombre' => 'Noticias Oromar',
             'hora_inicio' => '21:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/NOTICIAS-OROMAR-TANIA-LOOR.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/NOTICIAS-OROMAR-TANIA-LOOR.jpg',
         ),
         array(
             'nombre' => 'Ranger',
             'hora_inicio' => '22:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/WALKER.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/WALKER.jpg',
         ),
         array(
             'nombre' => 'EP',

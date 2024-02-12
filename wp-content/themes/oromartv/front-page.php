@@ -85,14 +85,14 @@
                     <div class="caption"><p>Luenes a Viernes</p><h4>GRAN CHAPARRAL</h4><button><a style="color: white;" href="">VER MÁS</a></button></div>
                 </div>
                 <div class="overlay-lqam"></div>
-                <div><img src="http://localhost:10008/wp-content/uploads/2024/02/EL-GRAN-CHAPARRAL.jpg" alt=""></div>
+                <div><img src="https://oromartv.com/wp-content/uploads/2024/02/EL-GRAN-CHAPARRAL.jpg" alt=""></div>
             </div>
           <div class="swiper-slide hero-slides">
                 <div class="caption-container">
                     <div class="caption"><p>Lunes a Viernes 21h00</p><h4>LA QUIERO A MORIR</h4><button><a style="color: white;" href="">VER MÁS</a></button></div>
                 </div>
                 <div class="overlay-lqam"></div>
-                <div><img src="http://localhost:10008/wp-content/uploads/2024/02/LA-QUIERO-A-MORIR.jpg" alt=""></div>
+                <div><img src="https://oromartv.com/wp-content/uploads/2024/02/LA-QUIERO-A-MORIR.jpg" alt=""></div>
           </div>
            
           <div class="swiper-slide hero-slides">
@@ -100,7 +100,7 @@
                     <div class="caption"><p>Sábados y Domingos 18h00</p><h4>BUTACA PREMIER</h4><button><a style="color: white;" href="">VER MÁS</a></button></div>
                 </div>
                 <div class="overlay-lqam"></div>
-                <div><img src="http://localhost:10008/wp-content/uploads/2024/02/BUTACA-PREMIERE.jpg" alt=""></div>
+                <div><img src="https://oromartv.com/wp-content/uploads/2024/02/BUTACA-PREMIERE.jpg" alt=""></div>
           </div>
         
         </div>
