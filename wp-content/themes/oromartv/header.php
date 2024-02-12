@@ -26,7 +26,7 @@
                                 <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/imagenes/OTV400.png" alt=""></a>
                             </div>
                             <nav>
-                                <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">Martin Herrera</a></li>
+                                <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">OROMAR TELEVISION</a></li>
                                 <li><a style="color: white" href="<?php echo site_url('/deportes') ?>">Deportes Oromar</a></li>
                                 <li><a style="color: white" href="<?php echo site_url('/livestream') ?>">Señal en vivo</a></li>
             
