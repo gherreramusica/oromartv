@@ -1116,14 +1116,14 @@ $programas = array(
             'hora_inicio' => '20:00',
             'descripcion' => 'Domingos a las 20h00',
             'duracion' => 30, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/NOTICIAS-OROMAR-DOMINICAL.jpg',
+            'imagen' => 'http://localhost:10008/wp-content/uploads/2024/02/NOTICIAS-OROMAR-DOMINICAL.jpg',
         ),
         array(
             'nombre' => 'BUTACA PREMIER',
             'hora_inicio' => '20:30',
             'descripcion' => 'Sabados y Domingos desde las 18h00',
             'duracion' => 90,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/BUTACA-PREMIERE.jpg',
+            'imagen' => 'http://localhost:10008/wp-content/uploads/2024/02/BUTACA-PREMIERE.jpg',
         ),
         array(
             'nombre' => 'RANGER DE TEXAS',
