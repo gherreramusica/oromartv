@@ -3193,7 +3193,6 @@ footer{
       #222222 40px,
       #222222 60px
     );
-    
 }
 .body-noticias .article-ad {
     text-align: center;
@@ -3205,8 +3204,7 @@ footer{
         rgb(255, 255, 255) 4px,
         #eeeeee 4px,
         #eeeeee 6px
-    );
-   
+    ); 
 }
 .body-noticias .Destacados li h2{
     position: relative;
@@ -3247,7 +3245,6 @@ footer{
     margin-top: 50px;
 }
 .horarios{
- 
     background-color:rgb(69, 69, 69);
     padding: 15px;
     grid-column: 7/-1;
@@ -3261,7 +3258,6 @@ footer{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-   
 }
 .horarios-wrapper{
     display: flex;
@@ -3334,9 +3330,6 @@ span{
     transition: .3s;
 }
 /* LOGIN FORM */
-
-
-
 #login h1 a, .login h1 a {
     
     height: 100%;
@@ -3427,7 +3420,6 @@ form p{
     background-color: #ccc;
     transition: .4s;
 }
-  
 .slider:before {
     position: absolute;
     content: "";
@@ -3751,7 +3743,6 @@ progress{
 .mail-chimp h2{
     font-size: 20px;
 }
-
 .mc-field-group input{
     padding: 10px;
     border: none;
@@ -3799,13 +3790,11 @@ progress{
     padding-bottom: 20px;
 }
 .reportes form input{
-width: 500px;
-height: 30px;
-   
+    width: 500px;
+    height: 30px;
 }
 form textarea{
     width: 500px;
-    
 }
 .reportes .wpcf7-submit{
     width: 100px;
@@ -4264,7 +4253,6 @@ form textarea{
         
         font-size: 13px;
     }
-
     .caption h4{
         font-size: 35px;     
     }  
@@ -4274,7 +4262,6 @@ form textarea{
     .caption-container{
         width: 95%;
     }
-
     .homepage-noticias{
         width: 100%;
         margin: auto;
@@ -4284,9 +4271,7 @@ form textarea{
       }
     .noticias-main-post{
         grid-column: 1/-1;
-      
     }  
-
     .video-slide p {
         color: #ffffff !important;
         font-size: var(--sm-title);
@@ -4298,7 +4283,6 @@ form textarea{
     }
     .vivo{
         width: 75px;
-        
     }
     .title-square{
         color: white;
@@ -4312,7 +4296,6 @@ form textarea{
     .vivo-header{
         background-color: #00000000;
     }
-   
     .vivo-header a{
         color: rgb(255, 255, 255);
         font-size: 15px;
@@ -4327,8 +4310,7 @@ form textarea{
         color: white;
         text-transform: uppercase;
         position: relative;
-        cursor: pointer;
-        
+        cursor: pointer; 
     }
     .logo img {
         color: white;
@@ -4336,7 +4318,6 @@ form textarea{
         height: auto;
         padding-left: 10px;
     }
-  
     .single-content .date{
         font-size: 15px;
     }
