@@ -26,7 +26,7 @@
                                 <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/imagenes/OTV400.png" alt=""></a>
                             </div>
                             <nav>
-                                <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">PORTADA</a></li>
+                                <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">NOTICIAS OROMAR</a></li>
                                 <li><a style="color: white" href="<?php echo site_url('/deportes') ?>">Deportes Oromar</a></li>
                                 <li><a style="color: white" href="<?php echo site_url('/livestream') ?>">Señal en vivo</a></li>
             
@@ -49,7 +49,7 @@
                                 <a href=""><i class="bi bi-tiktok"></i></a>
                             </div>
                             <div class="al-aire">
-                                <div class="vivo-header vivo"><a href="<?php echo site_url('/livestream') ?>"><span></span><span></span><p>EN VIVO</p></a></div>
+                                <div class="vivo-header vivo"><a href="<?php echo site_url('/livestream') ?>"><span></span><span></span><p>AL AIRE</p></a></div>
                             </div>
                         </div>
                     </div>

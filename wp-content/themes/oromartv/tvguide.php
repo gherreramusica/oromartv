@@ -14,7 +14,7 @@ $programas = array(
             'nombre' => 'Noticias Oromar',
             'hora_inicio' => '07:00',
             'descripcion' => 'Las noticias más importantes de Ecuador y el mundo con Katty Vera y Pedro Clotario',
-            'duracion' => 45,
+            'duracion' => 60,
             'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/NOTICIAS-OROMAR-KATTY-Y-PEDRO.jpg',
         ),
         array(

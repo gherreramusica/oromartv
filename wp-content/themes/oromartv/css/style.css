@@ -312,8 +312,8 @@ hr{
     background-color: #00000000;
     width: 100%;
     z-index: 3 !important;
-    grid-column-start: 3;
-    grid-column-end: 11;
+    grid-column-start: 1;
+    grid-column-end: -1;
     grid-row-start:3 ;
     grid-row-end: -1;
   }
@@ -530,7 +530,7 @@ hr{
     z-index:1 ;
 }
 .tendencias{
-   max-width: var(--md-container);
+   max-width: var(--sm-container); 
    margin: auto;
    display: grid;
    grid-template-columns: repeat(12, 1fr);
@@ -658,7 +658,7 @@ hr{
     border-radius: 15px;
 }
 .tendencias .body-wrapper{
-    grid-column:3/11 ;
+    grid-column:1/-1 ;
     grid-row: 1/2;
     margin: 0;
     z-index: 3;
@@ -683,7 +683,7 @@ hr{
 }
 .tendencias .tendencias-wrapper{
     grid-column-start: 7;
-  grid-column-end:11;
+  grid-column-end:-1;
   grid-row-start: 2;
   grid-row-end: -1;
 }
@@ -1380,7 +1380,7 @@ hr{
  /* VIDA SANA */
  
  .vida-sana-wrapper{
-    max-width: var(--md-container);
+    max-width: var(--sm-container);
     margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1420,10 +1420,10 @@ hr{
     margin: 0;
 }
 .vida-sana-wrapper .noticias-main-post{
-    grid-column: 3/7;
+    grid-column: 1/7;
 }
 .vida-sana-wrapper .noticias-list{
-    grid-column: 7/11; 
+    grid-column: 7/-1; 
     grid-row: 2/-1;
     background-color: rgb(69, 69, 69);
     padding: 30px;
@@ -1614,6 +1614,7 @@ hr{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 .body-single{
     background-color: white;
@@ -1677,7 +1678,7 @@ hr{
   }
   .noticias-wrapper .noticias-list{
     grid-column-start:7 ;
-    grid-column-end:11 ; 
+    grid-column-end:-1 ; 
     grid-row:1/-1 ;
     background-color: var(--secondary-color);
     padding: 30px;
@@ -1685,7 +1686,7 @@ hr{
     overflow: hidden;
   }
   .noticias-list-lms{
-    grid-column-start:3 !important ;
+    grid-column-start:1 !important ;
     grid-column-end:7 !important; 
     grid-row:2/-1 !important;
     background-color: #1e1e1e !important;
@@ -1839,12 +1840,11 @@ hr{
     margin: auto;
   }
   .noticias-wrapper{
-    max-width: var(--md-container);
+    max-width: var(--sm-container);
     margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, auto);
-   
     gap: 80px;
     justify-content: end;
   }
@@ -1859,8 +1859,8 @@ hr{
     margin-top: 20px;
 }
   .noticias-wrapper .body-wrapper{
-    grid-column-start:3 ;
-    grid-column-end:11 ;
+    grid-column-start:1 ;
+    grid-column-end:-1 ;
     grid-row: 1/2;
     margin: 0;
   }
@@ -2283,7 +2283,7 @@ footer a{
 .ad-lmt{
     margin-bottom: 80px;
     width: 100%;
-    grid-column: 3/7;
+    grid-column: 1/7;
     position: sticky;
     top: 100px;
     text-align: center;
@@ -2841,7 +2841,7 @@ main{
 }
 
 .video-container-wrapper{
-    width: 95%;
+    max-width: var(--sm-container);
     margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -2872,7 +2872,7 @@ main{
     z-index: 3;
     align-items: start;
     margin: 0;
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start:1 ;
     grid-row-end:3 ;
@@ -3240,7 +3240,7 @@ footer{
  
     background-color:rgb(69, 69, 69);
     padding: 15px;
-    grid-column: 7/11;
+    grid-column: 7/-1;
     grid-row: 2/3;
     height: 100%; 
     color: white;
@@ -3465,7 +3465,7 @@ input:checked + .slider:before {
 }
 .four-square{
     height: 100%;
-    grid-column: 3/7;
+    grid-column: 1/7;
     grid-row: 2/-1;
     background-color: red;
 }
@@ -3588,7 +3588,7 @@ article{
 }
 .noticias-wrapper .guardianes-wrapper{
     display: grid;
-    grid-column: 3/8;
+    grid-column: 1/8;
     grid-row: 2/4;
 }
   .guardianes-wrapper .button{
@@ -3605,7 +3605,7 @@ article{
 
 .swiper-guardianes {
     width: 100%;
-    grid-column: 8/11;
+    grid-column: 8/12;
     grid-row: 2/7;
 }
 .guardianes-slide {
@@ -3877,7 +3877,7 @@ form textarea{
         margin-top: 0px;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     .vivo span{
         left: 0px;
     }
