@@ -14,7 +14,8 @@ function mortal_theme() {
 }
 
 add_action( 'wp_enqueue_scripts', 'mortal_theme' );
-     add_theme_support( 'post-thumbnails' );
+     
+add_theme_support( 'post-thumbnails' );
      add_image_size( 'custom-size', 200, 132 , true ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
      add_image_size('single-size', 1200, 600, true);
      add_image_size( 'mini-size', 150, 100 , true );
@@ -270,5 +271,7 @@ function ignoreCertainFiles($exclude_filters){
     $exclude_filters[] = 'themes/oromartv/node-modules';
     return $exclude_filters;
 }
+
+
 
 ?>
