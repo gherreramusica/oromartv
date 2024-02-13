@@ -276,6 +276,7 @@
                     
                         <div class="noticias-wrapper">
                         <div class="horarios">
+                            <div class="id"><img src="<?php bloginfo('template_url') ?>/imagenes/OTV400.png" alt=""></div>
                 
                 
                 <?php

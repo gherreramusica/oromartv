@@ -2313,11 +2313,20 @@ footer a{
     top: 100px;
     grid-row: 1/2 !important;
 }
+.id{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    padding: 10px;
+}
 .deportes-list .category-lmt p{
     border: none;
+    color: var(--oromar-color);
 }
 .vida-sana-wrapper .category-lmt p{
     border: none;
+    color: var(--oromar-color);
 }
 .deportes-card-fila h2{
     color: rgb(255, 255, 255) !important;
@@ -4615,7 +4624,7 @@ header .wrapper{
     grid-column-start: 7;
     grid-column-end: 11;
     grid-row: 2/-1;
-    background-color: #19b2ff;
+   
     padding: 30px;
     border-radius: 10px;
     overflow: visible;
