@@ -58,7 +58,7 @@ if ($categories) {
                                                 </div>
                                                
                                                 <div class="the-content"><p><?php  the_content() ?></p></div>
-                                                <div class="google"><a href=""><img  src="http://cientist84.es/wp-content/uploads/2024/02/gn.webp" alt=""></a><p>Síguenos también en Google News</p></div>
+                                                <div class="google"><a href=""><img  src="<?php bloginfo('template_url') ?>/imagenes/gnews.webp" alt=""></a><p>Síguenos también en Google News</p></div>
                                         </div>
                                 </section>
                                 
