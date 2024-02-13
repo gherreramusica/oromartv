@@ -1,6 +1,6 @@
 
 
-import '/css/style.css';
+import '/css/main.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
