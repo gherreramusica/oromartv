@@ -74,7 +74,7 @@
 
                 ?>
                 <div class="caption-container">
-                    <div class="caption"><p>Estamos dando</p><h4 style="text-transform: uppercase;"><?php echo $programa_actual['nombre']; ?></h4><button><a style="color: white;" href="<?php echo site_url('/livestream') ?>"> VER EN VIVO</a></button></div>
+                    <div class="caption"><p>Estamos dando</p><h4><?php echo $programa_actual['nombre']; ?></h4><button><a style="color: white;" href="<?php echo site_url('/livestream') ?>"> VER EN VIVO</a></button></div>
                     
                 </div>
                 <div class="overlay-lqam"></div>
