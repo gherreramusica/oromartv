@@ -1,26 +1,19 @@
 <?php
 
 function mortal_theme() {
-        // Estilos icons CSS
-        wp_enqueue_style( 'icon-style', get_theme_file_uri('/build/index.css'));
-    
+    // Estilos icons CSS
+    wp_enqueue_style( 'icon-style', get_theme_file_uri('/build/index.css'));
     // Estilos Principal CSS
     wp_enqueue_style( 'style', get_theme_file_uri('/build/style-index.css'));
-
-
-
     // Estilos Swiper CSS
     wp_enqueue_style( 'swiper-style', get_theme_file_uri('/css/swiper-bundle.min.css'));
-
     // Scripts Principal JavaScript
     wp_enqueue_script( 'indexJs', get_theme_file_uri('/build/index.js'), NULL, '1.1', true);
     wp_enqueue_script( 'swiper', get_theme_file_uri('/src/modules/swiper-bundle.min.js'), NULL, '1.0', true);
     wp_enqueue_script( 'sliders', get_theme_file_uri('/src/modules/sliders.js'), NULL, '1.0', true);
- 
 }
 
 add_action( 'wp_enqueue_scripts', 'mortal_theme' );
-
      add_theme_support( 'post-thumbnails' );
      add_image_size( 'custom-size', 200, 132 , true ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
      add_image_size('single-size', 1200, 600, true);
@@ -101,7 +94,6 @@ add_action('login_enqueue_scripts', 'ourLoginCSS');
 
 function ourLoginCSS(){
     wp_enqueue_style( 'style', get_theme_file_uri('/build/style-index.css'));
-    
     wp_enqueue_style( 'style-css', get_theme_file_uri('/package/swiper-bundle.min.css'));
 }
 
@@ -110,12 +102,9 @@ function my_login_logo() { ?>
         #login h1 a, .login h1 a {
         background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/imagenes/OTV800.png);
 		height:100%;
-		width:100%;
-		
+		width:100%;	
 		background-repeat: no-repeat;
-        padding-bottom: 30px;
-        
-
+        padding-bottom: 30px;      
         }
     </style>
 <?php }
@@ -165,7 +154,6 @@ function registrar_custom_post_type_video() {
 }
 
 add_action( 'init', 'registrar_custom_post_type_video' );
-
 
 function mostrar_duracion_video_youtube($video_id) {
     $api_key = 'AIzaSyBax_l3_c9JIIwTGNk3WoCgmB-7RxLNJoY'; // Reemplaza 'TU_CLAVE_DE_API' con tu clave de API de YouTube
@@ -255,7 +243,6 @@ add_filter('get_avatar', 'custom_avatar', 1, 5);
 
 function custom_avatar($avatar, $id_or_email, $size, $default, $alt) {
     $user = false;
-
     if (is_numeric($id_or_email)) {
         $id = (int) $id_or_email;
         $user = get_user_by('id', $id);
@@ -274,13 +261,11 @@ function custom_avatar($avatar, $id_or_email, $size, $default, $alt) {
             $avatar = "<img src='{$profile_picture}' alt='{$alt}' class='avatar avatar-{$size} photo' height='{$size}' width='{$size}' />";
         }
     }
-
     return $avatar;
 }
 
 
 add_filter('ai1wm_exclude_content_from_export', 'ignoreCertainFiles');
-
 function ignoreCertainFiles($exclude_filters){
     $exclude_filters[] = 'themes/oromartv/node-modules';
     return $exclude_filters;
