@@ -45,9 +45,10 @@ if ( post_password_required() ) {
 			</nav><!-- .comment-navigation -->
 		<?php endif; // Check for comment navigation ?>
 
-		<?php if ( ! comments_open() && get_comments_number() ) : ?>
+		<?php if ( ! comments_open() ) : ?>
     <p class="no-comments"><?php _e( 'Comentarios cerrados', 'twentythirteen' ); ?></p>
 <?php endif; ?>
+
 
 
 	<?php endif; // have_comments() ?>

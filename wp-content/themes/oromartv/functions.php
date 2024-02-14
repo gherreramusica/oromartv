@@ -46,6 +46,7 @@ function set_post_views() {
         }
     }
 }
+
 add_action( 'wp', 'set_post_views' );
 
 // Función para obtener el número de visualizaciones de un post

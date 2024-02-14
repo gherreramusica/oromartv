@@ -68,7 +68,7 @@ if ($categories) {
 
                                                         // Mostrar la sección de comentarios solo si $show_comments es verdadero
                                                         if ($show_comments) {
-                                                        comments_template('/single-comments.php');
+                                                        comments_template('/oromartv-comments.php');
                                                         }
                                                         ?>
                                                         
