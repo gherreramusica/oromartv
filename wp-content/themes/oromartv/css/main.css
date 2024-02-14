@@ -3874,8 +3874,14 @@ form textarea{
     .recent-videos{
         margin-top: 0px;
     }
+    
 }
 @media only screen and (max-width: 900px) {
+    .homepage-container-wrapper{
+    width: 70%;
+    position: relative;
+    margin: auto;
+}
     .vivo span{
         left: 0px;
     }
@@ -4326,10 +4332,7 @@ form textarea{
         width: 90%;
         margin: auto;
     }  
-    .homepage-container-wrapper {
-        width: 100%;
-        margin: auto;
-    }
+   
     .livestream-homepage-container {
         background-color: #1e1e1e;
         width: 100%;
@@ -4647,7 +4650,7 @@ header .wrapper{
     top: 0px;
 }
 }
-@media only screen and (max-width: 400px){ 
+@media only screen and (max-width: 500px){ 
     .noticias-top iframe{
         height: 200px;
         width: 100%;
@@ -4661,4 +4664,7 @@ header .wrapper{
     .livestream iframe{
         height: 200px;
     } 
+    .homepage-container-wrapper{
+        width: 95%;
+    }
 }
