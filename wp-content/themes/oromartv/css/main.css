@@ -3882,6 +3882,16 @@ form textarea{
     position: relative;
     margin: auto;
 }
+.comentario-titulo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 15px;
+    white-space: nowrap;
+ }
     .vivo span{
         left: 0px;
     }
