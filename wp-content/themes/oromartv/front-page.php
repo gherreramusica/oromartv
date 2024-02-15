@@ -124,9 +124,9 @@
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-            document.getElementById("myBtn").style.display = "block";
+            document.getElementById("myBtn").style.opacity = "1";
         } else {
-            document.getElementById("myBtn").style.display = "none";
+            document.getElementById("myBtn").style.opacity = "0";
         }
     }
     </script>
