@@ -113,6 +113,24 @@
     
     <div class="homepage-container">  
     <!-- Swiper Carousel -->
+    <button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="bi bi-chevron-up"></i></button>
+    <script>
+    // Tu función JavaScript aquí
+    function topFunction() {
+    // Inicia el desplazamiento suave
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    </script>
+
             <div class="homepage-container-wrapper">
              
             
