@@ -3575,7 +3575,7 @@ article{
     z-index: 99; /* Asegura que el botón esté sobre otros elementos */
     border: none; /* Sin bordes */
     outline: none; /* Sin contorno */
-    background-color: #333; /* Fondo oscuro */
+    background-color: var(--secondary-color); /* Fondo oscuro */
     color: white; /* Texto blanco */
     cursor: pointer; /* Cursor tipo puntero */
     padding: 15px; /* Espaciado interno */
