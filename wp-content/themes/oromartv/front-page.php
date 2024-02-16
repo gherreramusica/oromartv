@@ -488,7 +488,7 @@ mostrarHoraConSegundos();
                                                     $post_date_diff = human_time_diff($post_timestamp, current_time('timestamp')) . ' atrás';
                                                     // Mostrar la fecha relativa
                                                     echo $post_date_diff;
-                                                    ?></p><span><a href="<?php the_permalink()?>?showComments=1"><i class="fa-solid fa-message"></i></a></span>
+                                                    ?></p><span><a href="<?php the_permalink()?>?showComments=1"><i class="bi bi-chat-left-fill"></i></a></span>
                                                 </div>
                                                 <li class="li-card">
                                                     <a href="<?php the_permalink()?>">
@@ -689,7 +689,7 @@ mostrarHoraConSegundos();
                                                         $post_date_diff = human_time_diff($post_timestamp, current_time('timestamp')) . ' atrás';
                                                         // Mostrar la fecha relativa
                                                         echo $post_date_diff;
-                                                        ?></p><span><i class="fa-solid fa-message"></i></span>
+                                                        ?></p><span><i class="bi bi-chat-left-fill"></i></span>
                                                     </div>
                                                     <li><a href="<?php the_permalink()?>"><h2><?php the_excerpt()?></h2></a></li>
                                                     <div class="share-like-tag">
@@ -780,7 +780,7 @@ mostrarHoraConSegundos();
                                                     $post_date_diff = human_time_diff($post_timestamp, current_time('timestamp')) . ' atrás';
                                                     // Mostrar la fecha relativa
                                                     echo $post_date_diff;
-                                                    ?></p><span><i class="fa-solid fa-message"></i></span>
+                                                    ?></p><span><i class="bi bi-chat-left-fill"></i></span>
                                                 </div>
                                                 <li><a href="<?php the_permalink()?>"><h2><?php the_excerpt()?></h2></a></li>
                                                 <div class="share-like-tag">
@@ -995,7 +995,7 @@ mostrarHoraConSegundos();
                                                         $post_date_diff = human_time_diff($post_timestamp, current_time('timestamp')) . ' atrás';
                                                         // Mostrar la fecha relativa
                                                         echo $post_date_diff;
-                                                        ?></p><span><i class="fa-solid fa-message"></i></span>
+                                                        ?></p><span><i class="bi bi-chat-left-fill"></i></span>
                                                     </div>
                                                     <li><a href="<?php the_permalink()?>"><h2><?php the_excerpt()?></h2></a></li>
                                                     <div class="share-like-tag">
@@ -1085,7 +1085,7 @@ mostrarHoraConSegundos();
                                                         $post_date_diff = human_time_diff($post_timestamp, current_time('timestamp')) . ' atrás';
                                                         // Mostrar la fecha relativa
                                                         echo $post_date_diff;
-                                                        ?></p><span><i class="fa-solid fa-message"></i></span>
+                                                        ?></p><span><i class="bi bi-chat-left-fill"></i></span>
                                                     </div>
                                                     <li><a href="<?php the_permalink()?>"><h2><?php the_excerpt()?></h2></a></li>
                                                     <div class="share-like-tag">
@@ -1155,7 +1155,7 @@ mostrarHoraConSegundos();
                                                         $post_date_diff = human_time_diff($post_timestamp, current_time('timestamp')) . ' atrás';
                                                         // Mostrar la fecha relativa
                                                         echo $post_date_diff;
-                                                        ?></p><span><i class="fa-solid fa-message"></i></span>
+                                                        ?></p><span><i class="bi bi-chat-left-fill"></i></span>
                                                     </div>
                                                     <li><a href="<?php the_permalink()?>"><h2><?php the_excerpt()?></h2></a></li>
                                                     <div class="share-like-tag">

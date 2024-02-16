@@ -112,14 +112,14 @@
         <div class="nav-menu">
             <div class="nav-menu-wrapper">
 
-                <div class="close"><i class="fa-solid fa-x"></i></div>
-                <div class="header-nav"><div class="logo"><img src="<?php bloginfo('template_url')?>/imagenes/OTV400.png" alt=""></div></div>
+                <div class="close"><i class="bi bi-x-circle-fill"></i></div>
+                <div class="header-nav"><div class="logo"><img  src="<?php bloginfo('template_url')?>/imagenes/oromartv_com_h.png" alt=""></div></div>
                 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <label>
                         <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ); ?></span>
                         <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Buscar...', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
                     </label>
-                    <button type="submit" class="search-submit"><?php echo esc_html_x( 'Search', 'submit button' ); ?></button>
+                    <button type="submit" class="search-submit"><i class="bi bi-search"></i></button>
                 </form>
                 <div class="offcanvas-header">
                     <h3>secciones</h3>
