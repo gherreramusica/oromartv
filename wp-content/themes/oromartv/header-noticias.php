@@ -117,12 +117,12 @@
                 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <label>
                         <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ); ?></span>
-                        <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Buscar...', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+                        <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Buscar en oromartv.com', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
                     </label>
                     <button type="submit" class="search-submit"><i class="bi bi-search"></i></button>
                 </form>
                 <div class="offcanvas-header">
-                    <h3>secciones</h3>
+                    <h3>SECCIONES</h3>
                     <hr>
                 </div>
                 
@@ -139,7 +139,7 @@
                     </div>
                 </div><br>
                 <div class="offcanvas-header">
-                    <h3>links útiles</h3>
+                    <h3>LINKS ÚTILES</h3>
                     <hr>
                 </div>
                 <div class="section-menu">
@@ -155,7 +155,7 @@
                     </div>
                 </div><br>
                     <div class="offcanvas-header">
-                        <h3>otros</h3>
+                        <h3>OTROS</h3>
                         <hr>
                     </div>
                     <div class="section-menu">
