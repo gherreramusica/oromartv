@@ -67,7 +67,7 @@
                     <button type="submit" class="search-submit"><i class="bi bi-search"></i></button>
                 </form>
                 <div class="offcanvas-header">
-                    <h3>secciones</h3>
+                    <h3>SECCIONES</h3>
                     <hr>
                 </div>
                 
@@ -84,7 +84,7 @@
                     </div>
                 </div><br>
                 <div class="offcanvas-header">
-                    <h3>links útiles</h3>
+                    <h3>LINKS ÚTILES</h3>
                     <hr>
                 </div>
                 <div class="section-menu">
@@ -100,7 +100,7 @@
                     </div>
                 </div><br>
                     <div class="offcanvas-header">
-                        <h3>otros</h3>
+                        <h3>OTROS</h3>
                         <hr>
                     </div>
                     <div class="section-menu">
@@ -117,10 +117,11 @@
                     </div>
                 </div>
                 <div class="social-media">
-                    <div class="icon"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
-                    <div class="icon"><a href=""><i class="fa-brands fa-x-twitter"></i></a></div>
-                    <div class="icon"><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
-                    <div class="icon"><a href=""><i class="fa-regular fa-envelope"></i></a></div>                                                       
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-youtube"></i></a>
+                                <a href=""><i class="bi bi-tiktok"></i></a>                                                     
                 </div>
             </div>           
         </div>
