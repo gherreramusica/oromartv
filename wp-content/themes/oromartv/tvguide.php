@@ -127,44 +127,44 @@ $programas = array(
             'hora_inicio' => '23:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '00:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '01:00',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '02:00',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '03:00',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2023/12/ESPACIO-CONTRATADO.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '04:00',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '05:00',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         
     ),
@@ -800,44 +800,44 @@ $programas = array(
             'hora_inicio' => '23:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '00:00',
             'descripcion' => 'Las aventuras de Chuck Norris el Ranger de Texas',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '01:00',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '02:00',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '03:00',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2023/12/ESPACIO-CONTRATADO.jpg',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '04:00',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '05:00',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         
     ),
@@ -847,35 +847,35 @@ $programas = array(
             'hora_inicio' => '06:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '07:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 45,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '08:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'Espacios Contratado',
             'hora_inicio' => '09:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '10:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'RANGER DE TEXAS',
@@ -959,56 +959,56 @@ $programas = array(
             'hora_inicio' => '22:00',
             'descripcion' => 'Sabados y Domingos a las 22h00',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '23:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '00:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '01:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '02:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '03:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '04:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '05:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         
     ),
@@ -1018,35 +1018,35 @@ $programas = array(
             'hora_inicio' => '06:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '07:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 45,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '08:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'Espacios Contratado',
             'hora_inicio' => '09:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '10:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'RANGER DE TEXAS',
@@ -1137,49 +1137,49 @@ $programas = array(
             'hora_inicio' => '23:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '00:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '01:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '02:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '03:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60,
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '04:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
         array(
             'nombre' => 'EP',
             'hora_inicio' => '05:00',
             'descripcion' => 'ESPACIO CONTRATADO',
             'duracion' => 60, // Duración del programa en minutos
-            'imagen' => 'http://cientist84.es/wp-content/uploads/2024/02/otv_003.png',
+            'imagen' => 'https://oromartv.com/wp-content/uploads/2024/02/otv_003_11zon.webp',
         ),
 
     )

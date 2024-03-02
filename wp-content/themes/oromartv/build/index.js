@@ -1,27 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../../css/style.css */ "./css/style.css");
-/* harmony import */ var bootstrap_icons_font_bootstrap_icons_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap-icons/font/bootstrap-icons.css */ "./node_modules/bootstrap-icons/font/bootstrap-icons.css");
-/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menu */ "./src/modules/menu.js");
-/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_menu__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_comentarios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/comentarios */ "./src/modules/comentarios.js");
-/* harmony import */ var _modules_comentarios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_comentarios__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-
-/***/ }),
-
 /***/ "./src/modules/comentarios.js":
 /*!************************************!*\
   !*** ./src/modules/comentarios.js ***!
@@ -60,10 +39,10 @@ toggle.addEventListener('click', () => {
 
 /***/ }),
 
-/***/ "./css/style.css":
-/*!***********************!*\
-  !*** ./css/style.css ***!
-  \***********************/
+/***/ "./node_modules/bootstrap-icons/font/bootstrap-icons.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/bootstrap-icons/font/bootstrap-icons.css ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -73,10 +52,322 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/bootstrap-icons/font/bootstrap-icons.css":
-/*!***************************************************************!*\
-  !*** ./node_modules/bootstrap-icons/font/bootstrap-icons.css ***!
-  \***************************************************************/
+/***/ "./css/base/global.scss":
+/*!******************************!*\
+  !*** ./css/base/global.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/components/newsletter.scss":
+/*!****************************************!*\
+  !*** ./css/components/newsletter.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/components/scrollup.scss":
+/*!**************************************!*\
+  !*** ./css/components/scrollup.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/components/sliders.scss":
+/*!*************************************!*\
+  !*** ./css/components/sliders.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/ads.scss":
+/*!*****************************!*\
+  !*** ./css/layout/ads.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/footer.scss":
+/*!********************************!*\
+  !*** ./css/layout/footer.scss ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/header-category.scss":
+/*!*****************************************!*\
+  !*** ./css/layout/header-category.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/header-deportes.scss":
+/*!*****************************************!*\
+  !*** ./css/layout/header-deportes.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/header-live.scss":
+/*!*************************************!*\
+  !*** ./css/layout/header-live.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/header-noticias.scss":
+/*!*****************************************!*\
+  !*** ./css/layout/header-noticias.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/header-single.scss":
+/*!***************************************!*\
+  !*** ./css/layout/header-single.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/header.scss":
+/*!********************************!*\
+  !*** ./css/layout/header.scss ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/live-comments.scss":
+/*!***************************************!*\
+  !*** ./css/layout/live-comments.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/sidebar.scss":
+/*!*********************************!*\
+  !*** ./css/layout/sidebar.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/layout/single-comments.scss":
+/*!*****************************************!*\
+  !*** ./css/layout/single-comments.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/archive.scss":
+/*!********************************!*\
+  !*** ./css/pages/archive.scss ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/deportes.scss":
+/*!*********************************!*\
+  !*** ./css/pages/deportes.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/enter.scss":
+/*!******************************!*\
+  !*** ./css/pages/enter.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/fp.scss":
+/*!***************************!*\
+  !*** ./css/pages/fp.scss ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/live.scss":
+/*!*****************************!*\
+  !*** ./css/pages/live.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/noticias.scss":
+/*!*********************************!*\
+  !*** ./css/pages/noticias.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/reportes.scss":
+/*!*********************************!*\
+  !*** ./css/pages/reportes.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/search.scss":
+/*!*******************************!*\
+  !*** ./css/pages/search.scss ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/single-video.scss":
+/*!*************************************!*\
+  !*** ./css/pages/single-video.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/pages/single.scss":
+/*!*******************************!*\
+  !*** ./css/pages/single.scss ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -112,42 +403,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
-/******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
-/******/ 			if(chunkIds) {
-/******/ 				priority = priority || 0;
-/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
-/******/ 				deferred[i] = [chunkIds, fn, priority];
-/******/ 				return;
-/******/ 			}
-/******/ 			var notFulfilled = Infinity;
-/******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
-/******/ 				var fulfilled = true;
-/******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
-/******/ 						chunkIds.splice(j--, 1);
-/******/ 					} else {
-/******/ 						fulfilled = false;
-/******/ 						if(priority < notFulfilled) notFulfilled = priority;
-/******/ 					}
-/******/ 				}
-/******/ 				if(fulfilled) {
-/******/ 					deferred.splice(i--, 1)
-/******/ 					var r = fn();
-/******/ 					if (r !== undefined) result = r;
-/******/ 				}
-/******/ 			}
-/******/ 			return result;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -188,68 +444,75 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		// no baseURI
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"index": 0,
-/******/ 			"./style-index": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
-/******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
-/******/ 			// add "moreModules" to the modules object,
-/******/ 			// then flag all "chunkIds" as loaded and fire callback
-/******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
-/******/ 				for(moduleId in moreModules) {
-/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
-/******/ 					}
-/******/ 				}
-/******/ 				if(runtime) var result = runtime(__webpack_require__);
-/******/ 			}
-/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
-/******/ 			for(;i < chunkIds.length; i++) {
-/******/ 				chunkId = chunkIds[i];
-/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
-/******/ 					installedChunks[chunkId][0]();
-/******/ 				}
-/******/ 				installedChunks[chunkId] = 0;
-/******/ 			}
-/******/ 			return __webpack_require__.O(result);
-/******/ 		}
-/******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkfictional_university_theme"] = globalThis["webpackChunkfictional_university_theme"] || [];
-/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
-/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
-/******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-index"], () => (__webpack_require__("./src/index.js")))
-/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _css_pages_enter_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../../css/pages/enter.scss */ "./css/pages/enter.scss");
+/* harmony import */ var _css_base_global_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../../../css/base/global.scss */ "./css/base/global.scss");
+/* harmony import */ var _css_components_scrollup_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../../../css/components/scrollup.scss */ "./css/components/scrollup.scss");
+/* harmony import */ var _css_components_sliders_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../../../css/components/sliders.scss */ "./css/components/sliders.scss");
+/* harmony import */ var _css_components_newsletter_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../../../../../css/components/newsletter.scss */ "./css/components/newsletter.scss");
+/* harmony import */ var _css_layout_ads_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../../../../../css/layout/ads.scss */ "./css/layout/ads.scss");
+/* harmony import */ var _css_layout_footer_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../../../../../css/layout/footer.scss */ "./css/layout/footer.scss");
+/* harmony import */ var _css_layout_header_deportes_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../../../../../css/layout/header-deportes.scss */ "./css/layout/header-deportes.scss");
+/* harmony import */ var _css_layout_header_category_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../../../../../../css/layout/header-category.scss */ "./css/layout/header-category.scss");
+/* harmony import */ var _css_layout_header_noticias_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../../../../../../css/layout/header-noticias.scss */ "./css/layout/header-noticias.scss");
+/* harmony import */ var _css_layout_header_live_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../../../../../css/layout/header-live.scss */ "./css/layout/header-live.scss");
+/* harmony import */ var _css_layout_header_single_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../../../../../../css/layout/header-single.scss */ "./css/layout/header-single.scss");
+/* harmony import */ var _css_layout_header_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../../../../../../css/layout/header.scss */ "./css/layout/header.scss");
+/* harmony import */ var _css_layout_live_comments_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../../../../../../css/layout/live-comments.scss */ "./css/layout/live-comments.scss");
+/* harmony import */ var _css_layout_sidebar_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../../../../../../css/layout/sidebar.scss */ "./css/layout/sidebar.scss");
+/* harmony import */ var _css_layout_single_comments_scss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../../../../../../css/layout/single-comments.scss */ "./css/layout/single-comments.scss");
+/* harmony import */ var _css_pages_archive_scss__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../../../../../../../css/pages/archive.scss */ "./css/pages/archive.scss");
+/* harmony import */ var _css_pages_fp_scss__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../../../../../../css/pages/fp.scss */ "./css/pages/fp.scss");
+/* harmony import */ var _css_pages_live_scss__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../../../../../../../css/pages/live.scss */ "./css/pages/live.scss");
+/* harmony import */ var _css_pages_noticias_scss__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../../../../../../../css/pages/noticias.scss */ "./css/pages/noticias.scss");
+/* harmony import */ var _css_pages_single_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../../../../../../../css/pages/single.scss */ "./css/pages/single.scss");
+/* harmony import */ var _css_pages_single_video_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../../../../../../../../css/pages/single-video.scss */ "./css/pages/single-video.scss");
+/* harmony import */ var _css_pages_reportes_scss__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../../../../../../../../css/pages/reportes.scss */ "./css/pages/reportes.scss");
+/* harmony import */ var _css_pages_search_scss__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../../../../../../../../css/pages/search.scss */ "./css/pages/search.scss");
+/* harmony import */ var _css_pages_deportes_scss__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../../../../../../../../css/pages/deportes.scss */ "./css/pages/deportes.scss");
+/* harmony import */ var bootstrap_icons_font_bootstrap_icons_css__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! bootstrap-icons/font/bootstrap-icons.css */ "./node_modules/bootstrap-icons/font/bootstrap-icons.css");
+/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./modules/menu */ "./src/modules/menu.js");
+/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_modules_menu__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var _modules_comentarios__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./modules/comentarios */ "./src/modules/comentarios.js");
+/* harmony import */ var _modules_comentarios__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_modules_comentarios__WEBPACK_IMPORTED_MODULE_27__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

@@ -1,0 +1,31 @@
+.noticias-heading-title{
+    font-size: var(--header-titles);
+    font-family: 'Sofia Sans extra condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;     
+    margin-bottom: 14px;
+    display: inline;     
+    padding-left: 15px;
+    line-height: 1;
+    
+}
+.noticias-heading-title:before{
+    content: "";
+    background-color: red;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+}
+.author p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: var(--header-titles-font);
+    font-weight: 700;
+}
+.author{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}

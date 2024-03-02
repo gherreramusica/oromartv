@@ -1,0 +1,84 @@
+/* GOOGLE ADS */
+
+.ad-banner-top{
+  .article-ad{
+    margin: 50px 0px;
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e2e;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0) 20px,
+      rgba(0, 0, 0, 0) 40px,
+      #222222 40px,
+      #222222 60px
+    );
+    .rotate{
+      color: #6c6c6c;
+      font-size: 0.8rem;
+      display: inline-flex;  
+    }
+  }
+}
+
+.rotate{
+  color: #6c6c6c;
+  font-size: 0.8rem;
+  display: inline-flex;  
+}
+
+.sticky-ad{
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    position: sticky;
+    top: 80px;
+   }
+   .side-ads{
+       width: 100%;
+       margin: auto;
+       background-color: rgba(255, 255, 255, 0);
+       top: 50px;
+       height: 1px;
+       position: sticky;
+       top: 50px;
+       display: flex;
+       justify-content: space-around;
+       margin-left: -750px;
+   }
+
+
+   .top-banner{
+    padding: 50px;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    position: relative;
+  }
+  .ad-top{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    margin: auto;
+    position: fixed;
+    height: 20vw;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+  }
+
+
+
+.article-ad-b{
+    text-align: center;
+    margin: 50px 0px;
+    padding: 20px;
+    background-color: #2e2e2e;
+    position: relative;
+    background: repeating-linear-gradient( 45deg, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 40px, #222222 40px, #222222 60px );
+}
+
+

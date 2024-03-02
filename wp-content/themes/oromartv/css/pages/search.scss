@@ -1,0 +1,17 @@
+.list-cards{
+    display: flex;
+    margin-bottom: 20px;
+}
+.list-cards .card{
+    flex-basis: 37%;
+}
+.list-cards .content{
+    padding-left: 10px;
+    font-size: 10px;
+    flex-basis: 63%;
+}
+.main-out{
+    padding: 15px 15px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

@@ -1,0 +1,164 @@
+.oromartv-comments{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 20px;
+   
+ }
+ .comentario-titulo{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+ }
+ .logo-comentarios img{
+    width: 50px;
+ }
+ .author-name{
+    font-weight: 700;
+ }
+
+ .must-log-in{
+    font-size: 13px;
+    display: flex;
+    gap: 5px;
+ }
+ .must-log-in a{
+    color: white;
+    text-decoration: underline;
+ }
+ .oromartv-comment-wrapper{
+    display: flex;
+    gap: 10px;
+ }
+ .author-name, .post-date{
+    font-size: 14px;
+ }
+ .post-date{
+    color: #bdbdbd;
+    font-size: 11px;
+ }
+ .post-content p{
+    font-size: 15px;
+    font-weight: 200;
+ }
+ .oromartv-comment-wrapper img{
+    width: 50px;
+    height: 50px;
+ }
+.child-comment {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        gap: 10px;
+}
+.comentario-principal{
+    margin: 50px 0px;
+}
+.child-comment img{
+    width: 40px;
+    height: 40px;
+} 
+ .comment-wrapper{
+    width: 100%;
+ }
+ .comment-form textarea{
+    width: 100%;
+    height: 25px;
+    appearance: none;
+    border: none;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #2e2e2e;
+    margin: 5px 0px;
+    color: white;
+    outline: none;
+    resize: none;
+ }
+ .comment-respond {
+    margin-top: 5px;
+ }
+ .comment-form label,
+ .comment-form .logged-in-as{
+    display: none;
+ }
+ .comment-form .submit{
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    padding: 10px;
+    border: none;
+    color: white;
+ }
+ .body-single .comment-form .submit{
+    border-radius: 2px;
+ }
+ .reply-like{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+ }
+ .thumbs{
+    display: flex;
+    gap: 10px;
+ }
+ .thumbs .fa-heart:hover{
+   color: red;
+   cursor: pointer;
+   
+ }
+ .comment-reply-title{
+    font-size: 13px;
+    color: white;
+    display: none;
+ }
+
+ .comment-reply-title a{
+    
+    color: white;
+ }
+ .top-card{
+    display: flex;
+    gap: 10px;
+ }
+ .reply-link a{
+    color: white;
+ }
+  .livestream-homepage-container {
+    background-color: #1e1e1e;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 100px;
+
+}
+.guia-hoy{
+   display: none;
+}
+.programas{
+    display: flex;
+    position: relative;
+    grid-column: 1/-1;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.programa-actual{
+    width: 100%;
+}
+.descripcion-programa{
+    width: 200px;
+}
+.info-programa{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+}
+.thumbnail-imagen{
+    width: 150px;
+}
+.thumbnail-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

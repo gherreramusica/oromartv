@@ -1,0 +1,181 @@
+
+.single-container {
+    width: 90%;
+    margin: auto;
+    .single-main{
+        max-width: 1250px;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        margin: 50px auto;
+        gap: 20px; 
+        .category-single{
+            font-size: 25px;
+            font-weight: 900;
+        }
+        .single-content{
+            font-size: 20px; 
+            h2{
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .the-content{
+                margin-top: 70px;
+            }
+        }
+        .right-side-bar {
+            padding: 0px;
+        }
+    }
+    .single-related{
+        margin: auto;
+        max-width: 1250px;
+        .related-post{
+            margin: auto;
+            max-width: 1250px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: 40px 0px;
+        }
+        .body-wrapper {
+            max-width: var(--md-container);
+            position: relative;
+            .noticias-heading-title{
+                font-size: var(--header-titles);
+                font-family: 'Sofia Sans extra condensed', sans-serif;
+                text-transform: uppercase;
+                font-weight: 800;     
+                margin-bottom: 14px;
+                display: inline;     
+                padding-left: 15px;
+                line-height: 1;
+                
+            }
+            .noticias-heading-title:before{
+                content: "";
+                background-color: red;
+                width: 10px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%; 
+            }
+        }
+    }    
+}
+
+
+.body-single .homepage{
+    max-width: var(--sm-container);
+}
+
+.avatar-div{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.the-extract{
+    margin: 20px 0px;
+}
+.the-content{
+    line-height: 30px;
+}
+.google{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #cecece00;
+    border: 1px solid #b0b0b0;
+    border-radius: 10px;
+}
+.google img{
+    width: 80px;
+}
+.left-side-bar .post-categories li {
+    font-size: 20px;
+    font-weight: 400; 
+}
+.post-categories li{
+    list-style: none;
+}
+.save{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #777777;
+    gap: 10px;
+    margin: 20px 0px;
+}
+.save p{
+    font-size: 15px;
+}
+.date{
+    color: #8c8c8c;
+    margin-top: 3px;
+    font-size: 13px;
+}
+.date-deportes{
+    color:rgb(211, 211, 211)!important;
+}
+.the-date{
+   
+    display: flex;
+    justify-content: center;
+}
+
+.author p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: var(--header-titles-font);
+    font-weight: 700;
+}
+.author{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.opacity-effect {
+    opacity: 0.3;  /* Cambia el valor de opacity según tus necesidades */
+    transition: opacity 0.5s ease;  /* Agrega una transición suave si lo deseas */
+}
+
+
+@media only screen and (max-width: 900px){
+    .body-single {
+        .single-container {
+            width: 90%;
+            margin: auto;
+            .single-main {
+                grid-template-columns: 1fr;
+                .main-single{
+                    .single{
+                        .single-content{
+                            h2{                 
+                                font-size: 25px;
+                                line-height: 30px;                               
+                            }
+                        }
+                    }
+                }
+                .left-side-bar, .related-post {
+                    padding: 0px;
+                }
+            }
+       }
+    }
+}

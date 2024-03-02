@@ -75,12 +75,9 @@
                     <div class="sectionA">
                         <div><a href="<?php echo site_url('/noticias') ?>">NOTICIAS</a></div>
                         <div><a href="<?php echo site_url('/deportes') ?>">DEPORTES</a></div>
-                        <!-- <div><a href="<?php echo site_url('/programas') ?>">PROGRAMAS</a></div> -->
                     </div>
                     <div class="sectionB">
-                        <div><a href="<?php echo site_url('/livestream') ?>">EN VIVO</a></div>
-                        <!-- <div><a href="<?php echo site_url('/deportes') ?>">COMUNIDAD</a></div>
-                        <div><a href="<?php echo site_url('/programas') ?>">TRIVIAS</a></div> -->
+                        <div><a href="<?php echo site_url('/livestream') ?>">EN VIVO</a></div>                   
                     </div>
                 </div><br>
                 <div class="offcanvas-header">

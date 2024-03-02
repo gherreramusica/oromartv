@@ -162,7 +162,7 @@
             <div class="sidebar-livestream">
             
                         <container class="topbar-container">
-            <!-- <div class="volver-a-ver"><p>VUÉLVELO A VER</p></div> -->
+            
             <div class="topbar">
                                 <li><p class="guia-programas" data-target="#guia-de-tv" style="color: white" href="">Guía de TV</p></li>
                                 <li class="comentario-menu"><p class="comentario-menu" data-target="#comentarios" style="color: white" href="">Comentarios</p><p><?php
@@ -409,53 +409,7 @@
                         </section>
                         
             </div>
-            <!-- <section class="recent-videos-maxwidth">
-            <div class="topbar-sidebar">
-                            <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">Guía de TV</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">Comentarios</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">Noticieros Anteriores</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/deportes') ?>">Pedro Escamoso</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/programas') ?>">Acorralada</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/deportes') ?>">Señal en vivo</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/programas') ?>">Programas</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/programas') ?>">Torrente un Torbellino</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/deportes') ?>">Jocelito la nueva era</a></li>
-                        
-                            <?php if(is_user_logged_in()){?>
-                                <li class="" ><a style="color: white" href="<?php echo wp_logout_url('/') ?>">Salir</a></li>
-                            <?php } else { ?>
-                                <li class="" ><a style="color: white" href="<?php echo esc_url(site_url('/wp-signup.php')) ?>">Ingresar</a></li>
-                            <?php } ?>
-                                            
-                        </div>
-                        <?php
-                                        $homePagePosts = new WP_Query(array(
-                                        'posts_per_page' => 10,
-                                        
-                                                                
-                                        
-                                        ));
-                                        while($homePagePosts->have_posts()) {
-                                        $homePagePosts->the_post(); ?>
-                                <div class="list-cards">
-                                        <div class="card"><a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url('custom-size') ?>" alt=""></a></div>
-                                        <div class="content"><p><?php
-                                            $categories = get_the_category();
-
-                                            // Verifica si hay categorías asociadas a la entrada
-                                            if ($categories) {
-                                                $first_category = $categories[0]; // Obtiene la primera categoría
-
-                                                // Imprime el enlace a la categoría
-                                                echo '<a style="color: white;" href="' . esc_url(get_category_link($first_category->term_id)) . '">' . esc_html($first_category->name) . '</a>';
-                                            }
-                                            ?></p>
-                                        <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
-
-                                        <p class="date"><?php echo get_the_date() ?></p></div>
-                                </div>
-                                <?php }?>
-                        </section> -->
+         
             
            
         </div>

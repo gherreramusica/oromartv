@@ -1,0 +1,53 @@
+.login{
+    background-color: var(--secondary-color); 
+    display: grid;
+    place-content: center;
+  }
+  
+  #login h1 a, .login h1 a {
+    
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+  }
+  
+  .login #nav a{
+    color: #ffffff;
+  }
+  .login #nav a:hover{
+    color: #000;
+  }
+  .login #backtoblog a{
+    color: #ffffff;
+  }
+  .wp-core-ui .button-primary{
+    background-color: #000000;
+  }
+  .login .message, .login .notice, .login .success{
+    border-left: 4px solid #000;
+  }
+  .login form{
+    background-color: var(--secondary-color);
+    border: 1px solid #ffffff;
+  }
+  .login form .input{
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    appearance: none;
+    outline: none;
+    border: 0;
+    border: 1px solid white;
+    border-radius: 0;
+    color: white;
+  }
+  .login label{
+    color: white;
+  }
+
+  .wp-core-ui .button, .wp-core-ui .button-secondary {
+    color: #ffffff;
+    border-color: #453b3b00;
+    background: #000000;
+    vertical-align: top;
+  }

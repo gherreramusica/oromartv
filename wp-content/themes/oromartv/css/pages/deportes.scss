@@ -1,0 +1,168 @@
+
+.body-deportes{
+    background-color: #e1e1e1;
+    color: black;
+.container-header-deportes{
+    .homepage-noticias {
+        max-width: var(--sm-container);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+       
+        .main-out {
+            padding: 15px 15px;
+            grid-column-start: 1;
+            .main-top {
+            width: 100%;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 50px;
+            background-color: white;
+            padding: 15px;
+            }
+            main {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                justify-content: center;
+            }
+            .main-middle{
+                .body-wrapper{
+                    position: relative;
+                    margin: 0;
+                    max-width: 100%;
+                    .noticias-heading-title{
+                        font-size: var(--header-titles);
+                        font-family: 'Sofia Sans extra condensed', sans-serif;
+                        text-transform: uppercase;
+                        font-weight: 800;     
+                        margin-bottom: 14px;
+                        display: inline;     
+                        padding-left: 15px;
+                        line-height: 1;
+                        .noticias-heading-title:before{
+                            content: "";
+                            background-color: red;
+                            width: 10px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%; 
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .body-deportes{
+        background-color: #e1e1e1;
+        color: black;
+    .container-header-deportes{
+        .homepage-noticias {
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+           
+            .main-out {
+                padding: 0px 0px;
+                grid-column-start: 1;
+                .main-top {
+                width: 100%;
+                margin: auto;
+                background-color: rgb(255, 255, 255);
+                margin-bottom: 50px;
+                background-color: white;
+                padding: 15px;
+                }
+                main {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                    justify-content: center;
+                }
+                .main-middle{
+                    .body-wrapper{
+                        position: relative;
+                        margin: 0;
+                        max-width: 100%;
+                        .noticias-heading-title{
+                            font-size: var(--header-titles);
+                            font-family: 'Sofia Sans extra condensed', sans-serif;
+                            text-transform: uppercase;
+                            font-weight: 800;     
+                            margin-bottom: 14px;
+                            display: inline;     
+                            padding-left: 15px;
+                            line-height: 1;
+                            .noticias-heading-title:before{
+                                content: "";
+                                background-color: red;
+                                width: 10px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%; 
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+
+
+
+.list-cards{
+    display: flex;
+    margin-bottom: 20px;
+}
+.list-cards .card{
+    flex-basis: 37%;
+}
+.list-cards .content{
+    padding-left: 10px;
+    font-size: 10px;
+    flex-basis: 63%;
+}
+.main-post .post-categories a{
+    font-size: 15px;
+}
+.main-post h2{
+    font-weight: 400;
+    line-height: 30px;
+}
+.main-post .content{
+    padding-top: 10px;
+}
+
+
+.list-post{
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.main-out{
+    padding: 15px 15px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.social-media a{   
+    font-size: 15px;
+}
+.main-middle{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;  
+
+}
