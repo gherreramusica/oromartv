@@ -175,6 +175,12 @@
                 .left-side-bar, .related-post {
                     padding: 0px;
                 }
+                
+            }
+            .single-related{
+                .related-post{
+                    display: block;
+                }
             }
        }
     }

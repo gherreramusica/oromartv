@@ -453,10 +453,13 @@
 @media only screen and (max-width: 900px) {
 .body-noticias {
     .noticias-top {
+        padding-top: 20px;
+        overflow:hidden ;
         .noticias-top-wrapper{
         display: block!important;
         width: 95%;
         margin: auto;
+
         .main-video{
             iframe {
                 height: 200px;
