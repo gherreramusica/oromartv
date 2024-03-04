@@ -615,6 +615,15 @@ img {
   display: inline-flex;
 }
 
+.noticias-oromar .noticias-wrapper .noticias-list .article-ad {
+  text-align: center;
+  margin: 50px 0px;
+  padding: 20px;
+  background-color: #2e2e2e;
+  position: relative;
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 40px, #222222 40px, #222222 60px);
+}
+
 .rotate {
   color: #6c6c6c;
   font-size: 0.8rem;
