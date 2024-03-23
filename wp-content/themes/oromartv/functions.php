@@ -239,8 +239,6 @@ $show_comments = isset($_GET['showComments']) && $_GET['showComments'] == 1;
 if ($show_comments) {
     comments_template();
 }
-
-
 add_filter('get_avatar', 'custom_avatar', 1, 5);
 
 function custom_avatar($avatar, $id_or_email, $size, $default, $alt) {
@@ -265,8 +263,6 @@ function custom_avatar($avatar, $id_or_email, $size, $default, $alt) {
     }
     return $avatar;
 }
-
-
 add_filter('ai1wm_exclude_content_from_export', 'ignoreCertainFiles');
 function ignoreCertainFiles($exclude_filters){
     $exclude_filters[] = 'themes/oromartv/node-modules';
@@ -275,4 +271,25 @@ function ignoreCertainFiles($exclude_filters){
 
 
 
+
+function add_post_templates( $post_templates ) {
+    $post_templates['single.php'] = 'Standard';
+    return $post_templates;
+}
+add_filter( 'theme_post_templates', 'add_post_templates' );
+
+function load_post_template( $template ) {
+    if ( is_single() && get_post_type() === 'post' ) {
+        $post_template = get_post_meta( get_the_ID(), '_wp_page_template', true );
+        if ( $post_template && 'default' !== $post_template && locate_template( $post_template ) ) {
+            return locate_template( $post_template );
+        }
+    }
+
+    return $template;
+}
+add_filter( 'single_template', 'load_post_template' );
+
 ?>
+
+

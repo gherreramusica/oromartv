@@ -39,7 +39,7 @@
                                 <a href=""><i class="bi bi-tiktok"></i></a>
                             </div>
                         <div class="al-aire">
-                            <div class="vivo-header-deportes vivo"><a href="<?php echo site_url('/livestream') ?>"><span></span><span></span><p>Al AIRE</p></a></div>
+                            <div class="vivo-header-deportes vivo"><a href="<?php echo site_url('/tv-en-vivo') ?>"><span></span><span></span><p>Al AIRE</p></a></div>
                         </div>
                     </div>
             </div>

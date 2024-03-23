@@ -1,3 +1,6 @@
+<?php
+//Template Name: Standard
+?>
 <?php get_header('single'); ?>
         
         <div class="single-container">
@@ -64,13 +67,7 @@ if ($categories) {
                                 
                 
                         </div>
-                                                        <?php $show_comments = isset($_GET['showComments']) && $_GET['showComments'] == 1;
-
-                                                        // Mostrar la sección de comentarios solo si $show_comments es verdadero
-                                                        if ($show_comments) {
-                                                        comments_template('/single-comments.php');
-                                                        }
-                                                        ?>
+                                                        
                                                         
                                                         <script>
         // Función para agregar la clase si la URL contiene "?showContent=1"
@@ -120,7 +117,7 @@ if ($categories) {
                         </div>
                 </div>
                 <div class="single-related">
-                <div class="body-wrapper"><h2 class="noticias-heading-title">MÁS NOTICIAS</h2></div>
+                        <div class="body-wrapper"><h2 class="noticias-heading-title">MÁS NOTICIAS</h2></div>
                         <div class="related-post">
                 
                         <?php
@@ -163,6 +160,16 @@ if ($categories) {
               
 
         </div>
+        <div class="side-comments">
+        <?php $show_comments = isset($_GET['showComments']) && $_GET['showComments'] == 1;
+
+// Mostrar la sección de comentarios solo si $show_comments es verdadero
+if ($show_comments) {
+comments_template('/single-comments.php');
+}
+?>
+        </div>
+        
         
 
         <?php get_footer(); ?>

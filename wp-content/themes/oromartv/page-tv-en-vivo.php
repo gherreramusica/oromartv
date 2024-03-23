@@ -6,8 +6,10 @@
 <div class="container-livestream">
 <div class="sticky-video">
             <div class="livestream">
-                <div class="livestream-wrapper"><iframe width="100%" height="800px" src="https://www.youtube.com/embed/LY2XEQ_SSXA?si=iAN7wNACr0ZAUZuE?&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+                <div class="livestream-wrapper"><script type="text/javascript" src="https://services.brid.tv/player/build/brid.min.js"></script> 
+                <div id="Brid_11197595" class="brid" style="width:16;height:9;" > </div> 
+                <script type="text/javascript"> $bp("Brid_11197595", {"id":"38283","width":"16","height":"9","video":"1403286"}); </script>
+            </div>
             </div>
             
             

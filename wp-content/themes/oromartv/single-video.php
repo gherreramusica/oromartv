@@ -1,10 +1,7 @@
-<?php 
-/* 
-Template Name: Video  
-*/ 
 
+<?php
+//Template Name: Video
 ?>
-
 <?php get_header('noticias'); ?>
         
         <div class="single-container">

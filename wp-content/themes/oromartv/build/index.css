@@ -137,10 +137,6 @@ a:hover {
   color: var(--secondary-color);
 }
 
-hr {
-  margin-bottom: 30px;
-}
-
 #wpadminbar {
   position: absolute;
 }
@@ -3203,7 +3199,6 @@ footer .footer-bar ul {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #000;
   height: 100px;
-  width: initial;
 }
 
 .body-single .commentlist .children {
