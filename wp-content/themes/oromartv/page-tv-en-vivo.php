@@ -14,7 +14,7 @@
             
             
         </div>
-    <div class="container-livestream-wrpper">
+    <div class="container-livestream-wrapper">
     <container class="topbar-container topbar-container-display">
             <!-- <div class="volver-a-ver"><p>VUÉLVELO A VER</p></div> -->
             <div class="topbar">
