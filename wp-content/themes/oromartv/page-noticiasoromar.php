@@ -2,6 +2,23 @@
 
         <?php get_header('noticias'); ?>
          <!-- <div class="notification"><div class="notification-wrapper"><div class="ticker"><span><i class="fa-solid fa-circle-dot"></i></span><h3>URGENTE</h3><p class="news-ticker">Armada estadounidense volverá a operar en Manta-Ecuador</p></div><span class="x"><i class="fa-solid fa-x"></i></span></div></div>  -->
+         <button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="bi bi-chevron-up"></i></button>
+    <script>
+    // Tu función JavaScript aquí
+    function topFunction() {
+    // Inicia el desplazamiento suave
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+            document.getElementById("myBtn").style.opacity = "1";
+        } else {
+            document.getElementById("myBtn").style.opacity = "0";
+        }
+    }
+    </script>
          <div class="noticias-top">
                 <div class="noticias-top-wrapper">
                 <?php
@@ -153,20 +170,20 @@
                                 'duracion' => 60, // Duración del programa en minutos
                                 'imagen' => 'http://cientist84.es/wp-content/uploads/2023/11/4.jpeg',
                                 ),
-                                array(
-                                        'nombre' => 'Noticias Oromar Estelar',
-                                        'hora_inicio' => strtotime('21:00'), // Convertir a formato de tiempo
-                                        'descripcion' => 'Lunes a Viernes a las 21h00',
-                                        'duracion' => 60, // Duración del programa en minutos
-                                        'imagen' => 'http://cientist84.es/wp-content/uploads/2023/11/4.jpeg',
-                                        ),
+                                 array(
+                                         'nombre' => 'Noticias Oromar Estelar',
+                                         'hora_inicio' => strtotime('21:00'), // Convertir a formato de tiempo
+                                         'descripcion' => 'Lunes a Viernes a las 21h00',
+                                         'duracion' => 60, // Duración del programa en minutos
+                                         'imagen' => 'http://cientist84.es/wp-content/uploads/2023/11/4.jpeg',
+                                         ),
                                 ),
                         'Sunday' => array(
                                 array(
                                 'nombre' => 'Noticias Oromar Dominical',
                                 'hora_inicio' => strtotime('20:00'), // Convertir a formato de tiempo
                                 'descripcion' => 'Domingos 20h00',
-                                'duracion' => 60, // Duración del programa en minutos
+                                'duracion' => 30, // Duración del programa en minutos
                                 'imagen' => 'http://cientist84.es/wp-content/uploads/2023/11/4.jpeg',
                                 ),
                                 
@@ -196,7 +213,7 @@
                         // Verificar si hay un programa actual
                         if ($programaActual) {
                         echo '
-                        <div class="main-video"><h2>En Vivo: ' . $programaActual['nombre'] . '</h2><br><iframe width="560px" height="315px" src="https://www.youtube.com/embed/LY2XEQ_SSXA?si=iAN7wNACr0ZAUZuE?&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="main-video"><h2>En Vivo: ' . $programaActual['nombre'] . '</h2><br><script type="text/javascript" src="https://services.brid.tv/player/build/brid.min.js"></script> <div id="Brid_11765074" class="brid" style="width:16;height:9;" > </div> <script type="text/javascript"> $bp("Brid_11765074", {"id":"38283","width":"16","height":"9","video":"1403286"}); </script>
                         </div>
                     ';
                         } else {
@@ -226,6 +243,7 @@
                                         $homePagePosts = new WP_Query(array(
                                                 'posts_per_page' => 1,
                                                 'category_name' => 'entrevistas',
+                                                'post_type' => 'video',
                         
                                         ));
                                          while($homePagePosts->have_posts()) {
@@ -249,7 +267,7 @@
                                 <?php
                                         $homePagePosts = new WP_Query(array(
                                                 'posts_per_page' => 5,
-                                                'category__not_in' => array(14266, 942),
+                                                'category_name' => 'economia',
                                                 
 
                         
@@ -258,7 +276,7 @@
                                                 $homePagePosts->the_post(); ?>
                                         <li>    
                                                 <article>
-                                                        <div class="card"><h3><a href="<?php the_permalink() ?>"><?php the_title() ?></h3></a></div>
+                                                        <div class="card"><a href="<?php the_permalink() ?>"><h3><?php echo wp_trim_words( get_the_title(), 10, '<span class="leer-mas">...</span>'); ?></h3></a></div>
                                                         <div class="imagen"><a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('main-post') ?>" alt=""></a></div>
                                                 </article>
                                                 
@@ -272,15 +290,15 @@
                                 <?php
                                         $homePagePosts = new WP_Query(array(
                                                 'posts_per_page' => 5,
-                                                'category__not_in' => array(14266, 942),
+                                                'category_name' => 'politica',
                         
                                         ));
                                          while($homePagePosts->have_posts()) {
                                                 $homePagePosts->the_post(); ?>
                                         <li>    
                                                 <article>
-                                                        <div class="card"><a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a></div>
-                                                        <div class="imagen"><a href=""><img src="<?php the_post_thumbnail_url('main-post') ?>" alt=""></a></div>
+                                                        <div class="card"><a href="<?php the_permalink() ?>"><h3><?php echo wp_trim_words( get_the_title(), 10, '<span class="leer-mas">...</span>'); ?></h3></a></div>
+                                                        <div class="imagen"><a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('main-post') ?>" alt=""></a></div>
                                                 </article>
                                                 
                                         </li>
@@ -293,9 +311,10 @@
                                 <ul class="last-programs-flex">
                                 <?php
                                                         $homePagePosts = new WP_Query(array(
+                                                                'post_type' => 'video',
                                                                 'posts_per_page' => 6,
-                                                                'category_name' => 'noticieros-anteriores'
-                                                               
+                                                                'category_name' => 'noticieros-anteriores',
+                                                                                
                                         
                                                         ));
                                                         while($homePagePosts->have_posts()) {
@@ -310,13 +329,13 @@
          <div class="ad-banner-top">
                                     <div class="article-ad">
                                         <div class="rotate"><p>Publicidad</p></div>
-                                        <!-- GPT AdSlot 1 for Ad unit 'ANUNCIO_SUPERIOR' ### Size: [[980,120],[980,90],[970,250],[970,90],[930,180],[728,250],[728,90],[480,320],[468,90],[336,280],[250,360],[320,100],[320,50],[300,250],[300,100],[300,50],[250,360],[250,250],[200,200]] -->
-                                        <div id='div-gpt-ad-9278160-1'>
-                                        <script>
-                                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-9278160-1'); });
-                                        </script>
-                                        </div>
-<!-- End AdSlot 1 -->
+                                        <!-- GPT AdSlot 2 for Ad unit 'ANUNCIO_MEDIO' ### Size: [[980,120],[980,90],[970,250],[970,90],[930,180],[728,250],[728,90],[480,320],[468,90],[336,280],[250,360],[320,100],[320,50],[300,250],[300,100],[300,50],[250,250],[200,200]] -->
+<div id='div-gpt-ad-2377957-2'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-2377957-2'); });
+  </script>
+</div>
+<!-- End AdSlot 2 -->
 
 
                                     </div>
@@ -329,7 +348,7 @@
                         <div class="noticias-banner">
                                         <div class="imagen">
                                         <div class="overlay-noticias-banner"></div>
-                                        <img src="<?php the_post_thumbnail_url('page-banner') ?>" alt="">
+                                        <img src="https://oromartv.com/wp-content/uploads/2024/04/asamble-nacional_11zon.jpeg" alt="">
                                         
                                                 <div class="body-wrapper"><h3 class="noticias-heading-title">Política</h3></div></div>
                                                 
@@ -365,7 +384,7 @@
                                                                 <div class="list-cards">
                                                                         <div class="card"><a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url('custom-size') ?>" alt=""></a></div>
                                                                         <div class="content">
-                                                                        <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+                                                                        <h2><a href="<?php the_permalink() ?>"><?php echo wp_trim_words( get_the_title(), 10, '<span class="leer-mas">...</span>'); ?></a></h2>
                                                                         <p class="date"><?php echo get_the_date() ?></p></div>
                                                                 </div>
                                                                 <?php }?>
@@ -407,7 +426,7 @@
                                                         <div class="list-cards">
                                                                 <div class="card"><a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url('custom-size') ?>" alt=""></a></div>
                                                                 <div class="content">
-                                                                <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+                                                                <h2><a href="<?php the_permalink() ?>"><?php echo wp_trim_words( get_the_title(), 10, '<span class="leer-mas">...</span>'); ?></a></h2>
                         
                                                                 <p class="date"><?php echo get_the_date() ?></p></div>
                                                         </div>
@@ -419,7 +438,7 @@
                                 
                                         <div class="imagen">
                                         <div class="overlay-noticias-banner"></div>        
-                                        <img src="<?php the_post_thumbnail_url('page-banner') ?>" alt="">
+                                        <img src="https://oromartv.com/wp-content/uploads/2024/04/Bolsa-de-Valores.webp" alt="">
                                         
                                                 <div class="body-wrapper"><h3 class="noticias-heading-title">ECONOMÍA</h3></div></div>
                                         <main class="main-middle-noticias">
@@ -453,7 +472,7 @@
                                                                 <div class="list-cards">
                                                                         <div class="card"><a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url('custom-size') ?>" alt=""></a></div>
                                                                         <div class="content">
-                                                                        <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+                                                                        <h2><a href="<?php the_permalink() ?>"><?php echo wp_trim_words( get_the_title(), 10, '<span class="leer-mas">...</span>'); ?></a></h2>
                                                                         <p class="date"><?php echo get_the_date() ?></p></div>
                                                                 </div>
                                                                 <?php }?>
@@ -462,11 +481,11 @@
                                 </div>
                                 
                                 <main class="main-middle-noticias">
-                                <div class="body-wrapper" ><h3 class="noticias-heading-title">Salud</h3></div>
+                                <div class="body-wrapper" ><h3 class="noticias-heading-title">Internacionales</h3></div>
                                         <?php
                                         $saludPosts = new WP_Query(array(
                                                 'posts_per_page' => 1,
-                                                'category_name' => 'salud',
+                                                'category_name' => 'internacionales',
                         
                         
                                         ));
@@ -487,7 +506,7 @@
                                         <?php
                                         $saludPosts = new WP_Query(array(
                                                 'posts_per_page' => 4,
-                                                'category_name' => 'salud',
+                                                'category_name' => 'internacionales',
                                                 'offset' => 1
                         
                                         ));
@@ -497,7 +516,7 @@
                                                         <div class="list-cards">
                                                                 <div class="card"><a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url('custom-size') ?>" alt=""></a></div>
                                                                 <div class="content">
-                                                                <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+                                                                <h2><a href="<?php the_permalink() ?>"><?php echo wp_trim_words( get_the_title(), 10, '<span class="leer-mas">...</span>'); ?></a></h2>
                         
                                                                 <p class="date"><?php echo get_the_date() ?></p></div>
                                                         </div>
@@ -518,14 +537,14 @@
                                                 $homePagePosts->the_post(); ?>
                                 <section class="unitarios">
                                        
-                                         <div class="card"><a href="<?php the_permalink() ?>"><p><?php the_excerpt() ?></p></a></div>
-                                         <div class="thumb"><a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url('custom-size') ?>" alt=""></a></div>
+                                         <div class="card"><a href="<?php the_permalink() ?>"><p><?php echo wp_trim_words( get_the_title(), 20, '<span class="leer-mas">...</span>'); ?></p></a></div>
+                                         <div class="thumb"><a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url('main-post') ?>" alt=""></a></div>
                                  </section>
                                  <?php } ?>
                                 
                         </div>
                         <div class="sidebar">
-                                <div class="latest">
+                                <!-- <div class="latest">
                                         <div>
                                                 <h2>LO ÚLTIMO</h2><br>
                                         <?php
@@ -538,7 +557,7 @@
                                         <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4><br>
                                         <?php }?>
                                         </div>
-                                </div>
+                                </div> -->
                                 <div class="most-popular most-popular-noticias">
                                         <div><h2>LO MÁS VISTO</h2><br>
                                                                         <?php
@@ -553,14 +572,14 @@
                                                         $popular_posts = new WP_Query( $args );
                                                         while ( $popular_posts->have_posts() ) : $popular_posts->the_post();?>
                                                         
-                                                        <h4><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4><br>
+                                                        <li><h4><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4></li><br>
                                                         <?php 
                                                         
                                                         endwhile; ?>
                                         </div>
                                 </div>
                                
-                               <div class="newsletter">
+                               <!-- <div class="newsletter">
                                 <div class="mail-chimp">
                                         <div id="mc_embed_shell">
         
@@ -594,6 +613,23 @@
                                          </div>
         
                                 </div>
+                                </div> -->
+                                <div class="newsletter-cf7">
+                                                <h3>Suscríbete a nuestra Newsletter</h3><br>
+                                                <div class="cf7"><?php echo do_shortcode('[contact-form-7 id="a8d6f15" title="Newsletter"]') ?></div>
+                                                <div class="terminos"><p>Al enviar mi información acepto las <a href="">políticas de privacidad</a> y <a href="">términos y condiciones</a>  </p></div>
+                                </div>
+                                <div class="single-sideads">
+                                        <div class="single-ads">
+                                                <p>Publicidad</p>
+                                                <!-- GPT AdSlot 3 for Ad unit 'INTELIGENTE' ### Size: [[300,600],[300,250],[250,250],[200,200],[250,360]] -->
+                                                <div id='div-gpt-ad-2377957-3'>
+                                                <script>
+                                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-2377957-3'); });
+                                                </script>
+                                                </div>
+                                                <!-- End AdSlot 3 -->
+                                        </div>
                                 </div>
                         </div>
                                 </div>

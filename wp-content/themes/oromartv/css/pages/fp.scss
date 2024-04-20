@@ -4,8 +4,9 @@
     .homepage-container-wrapper{
         position: relative;
         margin: auto;
+       
         .video-container{
-            /* background-image: url("imagenes/otv_003.png"); */
+           background-image: url("/imagenes/otv_003.png"); 
            background-repeat:no-repeat ;
            background-size: cover; 
            position: relative;         
@@ -15,6 +16,7 @@
            justify-content: center;
            background-color: #1e1e1e; 
            .video-container-wrapper{
+                width: 95%;
                 max-width: var(--sm-container);
                 margin: auto;
                 display: grid;
@@ -32,6 +34,7 @@
                     grid-row-start:1 ;
                     grid-row-end:3 ;
                     .big-title{ 
+                        
                         z-index: 3;
                         h2{
                             font-size: 60px;
@@ -96,6 +99,7 @@
                 gap: 30px;
                 align-content: space-around;
                 align-items: end;
+                width: 95%;
                 span{
                     display: flex;
                     color: white;
@@ -131,19 +135,19 @@
                     height: 100%;
                     grid-column: 1/7;
                     grid-row: 2/-1;
-                    background-color: red;
+                    border-radius: 5px 5px 0px 0px;
+                    overflow: hidden;
                     .square-items{
                         position: relative;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
-                        .title-square{
-          
+                        .title-square{        
                             padding: 10px;
                             background-color: #000000;
                             font-family: 'Sofia Sans Extra Condensed', sans-serif;
-                            font-size: 50px;
-                            line-height: 55px;
+                            font-size: 40px;
+                            line-height: 45px;
                             text-transform: uppercase;
                             h3{
                                 color: white;
@@ -151,8 +155,18 @@
                         }
                         .imagen-square{
                             height: 100%;
+                            position: relative;
+                            .overlay{
+                                background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, rgb(30 30 30 / 62%) 50%, rgb(30 30 30 / 61%) 50%, rgba(30, 30, 30, 0.8) 70%, rgba(30, 30, 30, 0.8) 70%, #000000 100%);
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                            }
+                            
                             img{
-                                border-radius: 0px;
+                                
                                 height: 100%;
                                 object-fit: cover;
                             }
@@ -206,6 +220,9 @@
                                 .tendencias-imagen{
                                     flex-basis: 30%;
                                     position: relative;
+                                    max-height: 100px;
+                                    border-radius: 5px;
+                                    overflow: hidden;
                                     .play{
                                         color: white;
                                         background-color: var(--secondary-color);
@@ -296,6 +313,7 @@
                 grid-template-rows: repeat(6, auto);
                 gap: 80px;
                 justify-content: end;
+                width: 95%;
                 .button{
                 background-color: #00000000;
                 color: white;
@@ -350,18 +368,38 @@
                             .featured-program-fp {
                                 position: relative;
                                 width: 80%;
-                                height: 100%;
+                                height: fit-content;
                                 margin-left: -25px;
                                 img {
-                                    border-radius: 0px;
+                                    border-radius: 5px;
+                                    display: block;
                                 }
                                 progress{
                                     outline: none;
-                                    width: 100%;
-                                    height: 3px;
+                                    width: 98%;
+                                    margin: auto;
+                                    height: 5px;
                                     appearance: none;
                                     background-color: white;
                                     position: absolute;
+                                    bottom: 1px;
+                                    border-radius: 10px;
+                                    border: .1px solid white;
+                                    left: 1%;
+                                }
+                                progress::-webkit-progress-bar {
+                                    background-color: #eee; /* Color de fondo para Chrome, Safari y Opera */
+                                    border-radius: 10px; /* Asegúrate de usar el mismo valor de border-radius */
+                                }
+                                
+                                progress::-webkit-progress-value {
+                                    background-color: var(--secondary-color); /* Color de la parte de progreso para Chrome, Safari y Opera */
+                                    border-radius: 10px; /* Ajusta para bordes redondeados en la parte de progreso */
+                                }
+                                
+                                progress::-moz-progress-bar {
+                                    background-color: var(--secondary-color); /* Color de la parte de progreso para Firefox */
+                                    border-radius: 10px; /* Ajusta para bordes redondeados en la parte de progreso */
                                 }
                                 ::-webkit-progress-value{
                                     background-color: var(--secondary-color);
@@ -380,9 +418,6 @@
                         .timeline{
                             h4{
                                 color: #a7a7a7;
-                            }
-                            p{
-                                text-transform: uppercase;
                             }
                         }
                         .program-info{
@@ -416,14 +451,14 @@
                         text-orientation: sideways;
                         transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
                         rotate: 180deg;
-                        font-family: 'Anton', sans-serif;
+                        font-family: 'Sofia Sans Extra Condensed', sans-serif;
                         right: -8px;
                         font-size: 110px!important;
                         font-weight: 700;
                         bottom: -2px;
                         text-transform: uppercase;
                         white-space: nowrap;
-                        margin-right: -21px;
+                        margin-right: -37px;
                         margin-bottom: -20px;
                     }
                 }
@@ -444,7 +479,7 @@
                     grid-column-end:7 !important; 
                     grid-row:2/-1 !important;
                     background-color: #1e1e1e !important;
-                    padding: 0px!important;
+                    padding: 25px 0px!important;
                     border-radius: 0px !important;
                     overflow: hidden;
                     .noticias-list-flex-deportes{
@@ -498,6 +533,7 @@
                             h2{
                                 color: white;
                                font-weight: 200;   
+                               font-size: var(--md-title);
                             }
                             .noticias-card-fila:hover{
                                 background-color: #2a2a2a;
@@ -531,6 +567,8 @@
                                 position: relative;
                                 .pic{
                                     margin-top: 10px;
+                                    border-radius: 5px;
+                                    overflow: hidden;
                                 }
                                 .meta-post{
                                     display: flex;
@@ -688,6 +726,7 @@
                 }
                 .noticias-list-lms{
                     margin-top: -81px;
+                  
                     .noticias-card-fila-deportes::before{
                         content:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNvbG9yPSJibGFjayIgaGVpZ2h0PSIxMCIgd2lkdGg9IjcuNSIgdmlld0JveD0iMCAwIDM4NCA1MTIiPjwhLS0hRm9udCBBd2Vzb21lIEZyZWUgNi41LjEgYnkgQGZvbnRhd2Vzb21lIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20gTGljZW5zZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tL2xpY2Vuc2UvZnJlZSBDb3B5cmlnaHQgMjAyNCBGb250aWNvbnMsIEluYy4tLT48cGF0aCBkPSJNNzMgMzljLTE0LjgtOS4xLTMzLjQtOS40LTQ4LjUtLjlTMCA2Mi42IDAgODBWNDMyYzAgMTcuNCA5LjQgMzMuNCAyNC41IDQxLjlzMzMuNyA4LjEgNDguNS0uOUwzNjEgMjk3YzE0LjMtOC43IDIzLTI0LjIgMjMtNDFzLTguNy0zMi4yLTIzLTQxTDczIDM5eiIvPjwvc3ZnPg==);
                         position: absolute;
@@ -719,18 +758,18 @@
                         flex-direction: row !important;
                     }
                     .titulo-vertical{
-                        color: rgba(255, 255, 255, 0.37);
+                        color: rgb(53, 53, 53);
                         line-height: 1;
                         writing-mode: vertical-rl;
                         text-orientation: sideways;
                         transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
                         rotate: 180deg;
-                        font-family: 'Anton', sans-serif;
+                        font-family: 'Sofia Sans Extra Condensed', sans-serif;
                         bottom: 0;
                         right: 0;
                         font-size: 80px;
                         font-weight: 700;
-                        margin-right: -39px;
+                        margin-right: -54px;
                         position: relative;
                         bottom: -34px;
                     }
@@ -744,6 +783,7 @@
                         color: rgb(255, 255, 255) !important;
                     }
                     .noticias-list-flex{
+                        width: 80%;
                         .noticias-card-fila-deportes{
                             border-bottom: 1px solid #515151!important;  
                         }
@@ -768,7 +808,7 @@
                                 width: 80%;
                             }
                             img{
-                                border-radius: 15px;
+                                border-radius: 5px;
                             }
                         }
                         
@@ -783,6 +823,7 @@
                     }
                     .deportes-card-fila h2{
                         color: rgb(255, 255, 255) !important;
+                        font-size: 16px;
                     }
                     .deportes-card-fila::before{
                         content:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNvbG9yPSJibGFjayIgaGVpZ2h0PSIxMCIgd2lkdGg9IjcuNSIgdmlld0JveD0iMCAwIDM4NCA1MTIiPjwhLS0hRm9udCBBd2Vzb21lIEZyZWUgNi41LjEgYnkgQGZvbnRhd2Vzb21lIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20gTGljZW5zZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tL2xpY2Vuc2UvZnJlZSBDb3B5cmlnaHQgMjAyNCBGb250aWNvbnMsIEluYy4tLT48cGF0aCBkPSJNNzMgMzljLTE0LjgtOS4xLTMzLjQtOS40LTQ4LjUtLjlTMCA2Mi42IDAgODBWNDMyYzAgMTcuNCA5LjQgMzMuNCAyNC41IDQxLjlzMzMuNyA4LjEgNDguNS0uOUwzNjEgMjk3YzE0LjMtOC43IDIzLTI0LjIgMjMtNDFzLTguNy0zMi4yLTIzLTQxTDczIDM5eiIvPjwvc3ZnPg==);
@@ -791,7 +832,7 @@
                         height: 0px !important;
                         border-radius: 100%;
                         background-color: rgb(255, 255, 255)!important;
-                        top: 29px !important;
+                        top: 25px !important;
                         left: -15px;
                         font-size: 12px;
                         display: grid;
@@ -838,6 +879,7 @@
     place-content: center;
     background-color: #1e1e1e;
     .vida-sana-wrapper {
+        width: 95%;
         max-width: var(--sm-container);
         margin: auto;
         display: grid;
@@ -847,6 +889,7 @@
         justify-content: end;
         .date-vs p{ 
             color: white;
+
         }
         .noticias-main-post{
             grid-column-start:1 ;
@@ -856,6 +899,8 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            border-radius: 5px;
+            overflow: hidden;
             h2{
                 line-height: 45px;
                 font-size: 50px;
@@ -876,21 +921,25 @@
             padding: 30px;
             border-radius: 10px;
             display: flex;
+            justify-content: space-between;
             position: relative;
             overflow: hidden;
+            .noticias-list-inner{
+                width: 75%;
+            }
             .titulo-vertical {
-                color: rgba(255, 255, 255, 0.37);
+                color: rgb(53, 53, 53);
                 line-height: 1;
                 writing-mode: vertical-rl;
                 text-orientation: sideways;
                 transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
                 rotate: 180deg;
-                font-family: 'Anton', sans-serif;
+                font-family: 'Sofia Sans Extra Condensed', sans-serif;;
                 bottom: 0;
                 right: 0;
                 font-size: 80px;
                 font-weight: 700;
-                margin-right: -39px;
+                margin-right: -54px;
                 position: relative;
                 bottom: -34px;
             }
@@ -910,6 +959,7 @@
                 display: block;
                 h2{
                     color: rgb(255, 255, 255);
+                    font-size: 20px;
                 }
             }           
             .noticias-card-fila-vs:hover{
@@ -948,13 +998,16 @@
         background-color: #1e1e1e;
         padding-top: 40px;
         .homepage-container-wrapper {
-            width: 70%;
+            width: 100%;
             position: relative;
             margin: auto;
             .video-container{
                 .video-container-wrapper{
                     .body-wrapper{
                         .big-title{
+                            .big-title-meta{
+                            display: none;
+                            }
                             h2{
                                 font-size: 40px;
                             }
@@ -997,6 +1050,9 @@
                 }
             }
             .noticias-oromar{
+                h2{
+                    font-size: 16px;
+                }
                 .noticias-wrapper {
                     display: flex;
                     flex-direction: column;
@@ -1037,6 +1093,9 @@
                         align-self: center;
                         gap: 0px;
                         top: 0px;
+                        .noticias-list-flex{
+                            width: initial;
+                        }
                         .titulo-vertical{
                             display: none;
                         }
@@ -1045,10 +1104,14 @@
             }
             
             .noticias-oromar{
+                padding-top: 100px;
                 .vida-sana-wrapper {
                     display: flex;
                     flex-direction: column;
                     .noticias-list{
+                        .noticias-list-inner{
+                            width: initial;
+                        }
                         .titulo-vertical {
                             display: none;
                         }
@@ -1086,7 +1149,7 @@
         }
     
         .homepage-container-wrapper {
-        width: 95%;
+        width: 100%;
         }
     }
   }  
@@ -1113,7 +1176,7 @@
    width: 100%;
    min-width: 250px;
    padding: 10px;
-   border-bottom: 1px solid white;
+   border-bottom: 1px solid #515151;
    border-radius: 0px;
 }
 .timeline-frontpage{

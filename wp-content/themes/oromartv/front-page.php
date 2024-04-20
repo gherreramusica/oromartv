@@ -9,7 +9,15 @@
     
         <div class="swiper-wrapper hero-slider-wrapper">
         
-       
+        <div class="swiper-slide hero-slides">
+                <div class="caption-container">
+                    <div class="caption"><p>GRAN ESTRENO <strong>7 DE MAYO</strong></p><h4>BLN, La Competencia</h4><button><a style="color: white;" href="https://oromartv.com/revolutionando-la-pantalla-bln-la-competencia-llega-desde-manta-para-unir-al-ecuador-en-el-reality-mas-grande-y-emocionante-jamas-visto/">VER MÁS</a></button></div>
+                </div>
+                <a href="https://oromartv.com/revolutionando-la-pantalla-bln-la-competencia-llega-desde-manta-para-unir-al-ecuador-en-el-reality-mas-grande-y-emocionante-jamas-visto/"><img src="https://oromartv.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-08-at-14.39.38-1.jpeg">
+                    <div class="overlay-lqam"></div>
+                </a>
+                <div><a href="https://oromartv.com/revolutionando-la-pantalla-bln-la-competencia-llega-desde-manta-para-unir-al-ecuador-en-el-reality-mas-grande-y-emocionante-jamas-visto/"><img src="https://oromartv.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-08-at-14.39.38-1.jpeg" alt="BLN"></a></div>
+            </div>
         <div class="swiper-slide hero-slides">
             
         <?php
@@ -74,34 +82,41 @@
 
                 ?>
                 <div class="caption-container">
-                    <div class="caption"><p>Estamos dando</p><h4><?php echo $programa_actual['nombre']; ?></h4><button><a style="color: white;" href="<?php echo site_url('/livestream') ?>"> VER EN VIVO</a></button></div>
+                    <div class="caption"><p>Estamos dando</p><h4><?php echo $programa_actual['nombre']; ?></h4><button><a style="color: white;" href="<?php echo site_url('/tv-en-vivo') ?>"> VER EN VIVO</a></button></div>
                     
                 </div>
-                <div class="overlay-lqam"></div>
+                <a href="<?php echo site_url('/tv-en-vivo') ?>">
+                    <div class="overlay-lqam"></div>
+                </a>
                 <div><img src="<?php echo $programa_actual['imagen']; ?>" alt=""></div>
           </div>
-            <div class="swiper-slide hero-slides">
-                <div class="caption-container">
-                    <div class="caption"><p>Luenes a Viernes</p><h4>GRAN CHAPARRAL</h4><button><a style="color: white;" href="">VER MÁS</a></button></div>
-                </div>
-                <div class="overlay-lqam"></div>
-                <div><img src="https://oromartv.com/wp-content/uploads/2024/02/EL-GRAN-CHAPARRAL.jpg" alt=""></div>
-            </div>
+            
           <div class="swiper-slide hero-slides">
                 <div class="caption-container">
-                    <div class="caption"><p>Lunes a Viernes 21h00</p><h4>LA QUIERO A MORIR</h4><button><a style="color: white;" href="">VER MÁS</a></button></div>
+                    <div class="caption"><p>MUY PRONTO</p><h4>ALMA INDOMABLE</h4><button><a style="color: white;" href="<?php echo site_url('/tv-en-vivo') ?>">VER MÁS</a></button></div>
                 </div>
-                <div class="overlay-lqam"></div>
-                <div><img src="https://oromartv.com/wp-content/uploads/2024/02/LA-QUIERO-A-MORIR.jpg" alt=""></div>
+                <a href="<?php echo site_url('/tv-en-vivo') ?>">
+                    <div class="overlay-lqam"></div>
+                </a>
+                <div><img src="https://oromartv.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-12-at-14.17.48.jpeg" alt=""></div>
           </div>
            
           <div class="swiper-slide hero-slides">
                 <div class="caption-container">
                     <div class="caption"><p>Sábados y Domingos 18h00</p><h4>BUTACA PREMIER</h4><button><a style="color: white;" href="">VER MÁS</a></button></div>
                 </div>
-                <div class="overlay-lqam"></div>
+                <a href="<?php echo site_url('/tv-en-vivo') ?>">
+                    <div class="overlay-lqam"></div>
+                </a>
                 <div><img src="https://oromartv.com/wp-content/uploads/2024/02/BUTACA-PREMIERE.jpg" alt=""></div>
           </div>
+           <div class="swiper-slide hero-slides">
+                <div class="caption-container">
+                    <div class="caption"><p>Votaciones abiertas</p><h4>VOTA YA</h4><button><a style="color: white;" href="http://localhost:10003/bln">VOTAR</a></button></div>
+                </div>
+                <a href="https://oromartv.com/bln/"><div class="overlay-lqam"></div></a>
+                <div><img src="https://oromartv.com/wp-content/uploads/2024/04/VOTAYA_11zon.jpg" alt=""></div>
+          </div> 
         
         </div>
         <div class="swiper-pagination"></div>
@@ -148,6 +163,7 @@
                                         $homePageVideos = new WP_Query(array(
                                             'posts_per_page' => 8,
                                             'category_name' => 'red-oromar',
+                                            'post_type' => 'video',
                                            
                                         ));
 
@@ -157,7 +173,7 @@
                                             <div class="swiper-slide video-slide">
                                                 <div class="play">
                                                     <span><div class="play-video-icon"><i class="bi bi-play-fill"></i></div></span>
-                                                    <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('custom-size')?>" alt=""></a>
+                                                    <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('main-post')?>" alt=""></a>
                                                 </div>
                                                 <a href="<?php the_permalink() ?>"><p><?php echo wp_trim_words( get_the_title(), 10, ' <span class="leer-mas">Leer más</span>'); ?></p></a></div>
                                         <?php } ?>
@@ -169,16 +185,19 @@
                             </div>
                             <div class="overlay"></div>
                         </div>
-                        <div class="ad-banner-top"><div class="article-ad">
+                        <div class="ad-banner-top">
+                            <div class="article-ad">
                                     <div class="rotate"><p>Publicidad</p></div>
-                                    <!-- GPT AdSlot 1 for Ad unit 'ANUNCIO_SUPERIOR' ### Size: [[980,120],[980,90],[970,250],[970,90],[930,180],[728,250],[728,90],[480,320],[468,90],[336,280],[250,360],[320,100],[320,50],[300,250],[300,100],[300,50],[250,360],[250,250],[200,200]] -->
-<div id='div-gpt-ad-9278160-1'>
- 
-</div>
-<!-- End AdSlot 1 -->
-
-
-                                 </div></div>  
+                                    
+                                        <!-- GPT AdSlot 1 for Ad unit 'ANUNCIO_SUPERIOR' ### Size: [[980,120],[980,90],[970,90],[930,180],[728,250],[728,90],[480,320],[468,90],[336,280],[250,360],[320,100],[320,50],[300,250],[300,100],[300,50],[250,250],[200,200]] -->
+                                        <div id='div-gpt-ad-9471540-1'>
+                                            <script>
+                                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-9471540-1'); });
+                                            </script>
+                                        </div>
+                                        <!-- End AdSlot 1 -->
+                            </div>
+                        </div>  
                       
                                 <div class="tendencias-container">
                                     <section class="tendencias">
@@ -195,6 +214,7 @@
                                             <div class="square-items">
                                                 <div class="imagen-square">
                                                     <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('main-post') ?>" alt=""></a>
+                                                    <a href="<?php the_permalink() ?>"><div class="overlay"></div></a>
                                                 </div>
                                                 <div class="title-square">
                                                     <a style="" href="<?php the_permalink() ?>"><h3><?php echo wp_trim_words( get_the_title(), 20); ?></h3></a>
@@ -279,11 +299,13 @@
                                  <div class="ad-banner-top">
                                     <div class="article-ad">
                                         <div class="rotate"><p>Publicidad</p></div>
-                                        <!-- GPT AdSlot 1 for Ad unit 'ANUNCIO_MEDIO' ### Size: [[980,120],[980,90],[970,250],[970,90],[930,180],[728,250],[728,90],[480,320],[468,90],[336,280],[250,360],[320,100],[320,50],[300,250],[300,100],[300,50],[250,360],[250,250],[200,200]] -->
-                                        <div id='div-gpt-ad-9959793-1'>
-                                        
-                                        </div>
-                                        <!-- End AdSlot 1 -->
+                                        <!-- GPT AdSlot 2 for Ad unit 'ANUNCIO_MEDIO' ### Size: [[980,120],[980,90],[970,90],[930,180],[728,250],[728,90],[480,320],[468,90],[336,280],[250,360],[320,100],[320,50],[300,250],[300,100],[300,50],[250,250],[200,200]] -->
+<div id='div-gpt-ad-9471540-2'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-9471540-2'); });
+  </script>
+</div>
+<!-- End AdSlot 2 -->
 
 
                                     </div>
@@ -313,7 +335,7 @@
                                 
                              
                                 <div>  
-                                    <div class="category-lmt"><a href="http://localhost:10008/category/politica/"><p style="color:white">En Política</p></a></div>
+                                    <div class="category-lmt"><a href="https://oromartv.com/category/politica/"><p style="color:white">En Política</p></a></div>
                                         
                                     <div class="noticias-list-flex noticias-list-flex-tendencias">
                                     <?php
@@ -412,7 +434,7 @@
                                 
                             
                                 <div>  
-                                    <div class="category-lmt"><a href="http://localhost:10008/category/seguridad/"><p style="color:white">Seguridad</p></a></div>
+                                    <div class="category-lmt"><a href="https://oromartv.com/category/seguridad/"><p style="color:white">Seguridad</p></a></div>
                                         
                                     <div class="noticias-list-flex noticias-list-flex-tendencias">
                                             <?php
@@ -504,11 +526,13 @@
                             <div class="article-ad">
                                 <div class="article-ad-container">
                                     <div class="rotate"><p>Anuncio</p></div>
-                                                                    <!-- /22840647716/INTELIGENTE -->
-                                                                    <!-- /22840647716/CUADRADOS -->
-                                            <div id='div-gpt-ad-1705317863712-0' style='min-width: 200px; min-height: 200px;'>
-                                              
-                                            </div>
+                                                                    <!-- GPT AdSlot 3 for Ad unit 'CUADRADOS' ### Size: [[200,200],[250,250],[300,250],[336,280]] -->
+<div id='div-gpt-ad-9471540-3'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-9471540-3'); });
+  </script>
+</div>
+<!-- End AdSlot 3 -->
                                 </div>
                             </div>                                
 
@@ -516,13 +540,14 @@
                                 
                             
                                 <div>  
-                                    <div class="category-lmt"><a href="http://localhost:10008/category/entretenimiento/"><p style="color:white">Entretenimiento</p></a></div>
+                                    <div class="category-lmt"><a href="https://oromartv.com/category/lomastrend/"><p style="color:white">Lo Más Trend</p></a></div>
                                         
                                     <div class="noticias-list-flex noticias-list-flex-tendencias noticias-list-flex-entretenimiento">
                                     <?php
                                         $homePagePosts = new WP_Query(array(
                                         'posts_per_page' => 2,
-                                        'category_name' => 'entretenimiento',
+                                        'category_name' => 'lomastrend',
+                                        'post_type' => 'video'
                                         ));?>
                                         <?php if ($homePagePosts->have_posts()) : while ($homePagePosts->have_posts()) : $homePagePosts->the_post();?>    
                                         <div class="noticias-card-fila noticias-card-fila-tendencias">
@@ -607,7 +632,7 @@
                             <div class="noticias-list noticias-list-lms">
                                 
                                 <div>  
-                                    <div class="category-lmt"><a href="http://localhost:10008/category/deportes/"><p style="color:white">Deportes</p></a></div>
+                                    <div class="category-lmt"><a href="https://oromartv.com/category/deportes/"><p style="color:white">Deportes</p></a></div>
                                         
                                     <div class="noticias-list-flex noticias-list-flex-deportes">
                                             <?php
@@ -715,10 +740,13 @@
                         <div class="ad-lmt">
                             <div class="article-ad-container">
                                 <div class="rotate"><p>Publicidad</p></div>
-                                <!-- /22840647716/INTELIGENTE -->
-                                <div id='div-gpt-ad-1704333725174-0' style='min-width: 200px; min-height: 200px;'>
-                            
-                                </div>
+                                <!-- GPT AdSlot 4 for Ad unit 'SQUARE_B' ### Size: [[200,200],[250,250],[300,250],[336,280],[300,600]] -->
+<div id='div-gpt-ad-9471540-4'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-9471540-4'); });
+  </script>
+</div>
+<!-- End AdSlot 4 -->
                             </div>
                         </div>    
                         <?php
@@ -852,7 +880,7 @@
                                                     </article>
                                                     <?php endif; ?>
                                     </div>
-                                    <div class="category-lmt"><a href="http://localhost:10008/category/internacionales/"><p style="color:white">Internacionales</p></a></div>
+                                    <div class="category-lmt"><a href="https://oromartv.com/category/internacionales/"><p style="color:white">Internacionales</p></a></div>
                                         
                                     <div class="noticias-list-flex noticias-list-flex-deportes">
                                     <?php
@@ -916,13 +944,16 @@
                                     </div> 
                                     <div class="article-ad-b">
                                         <div class="rotate"><p>Publicidad</p></div>
-                                        <!-- /22840647716/CUADRADOS -->
-<div id='div-gpt-ad-1705318144011-0' style='min-width: 200px; min-height: 200px;'>
- 
-</div>
+                                            <!-- GPT AdSlot 5 for Ad unit 'INTELIGENTE' ### Size: [[200,200],[250,250],[300,250],[336,280],[300,600]] -->
+                                            <div id='div-gpt-ad-9471540-5'>
+                                                <script>
+                                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-9471540-5'); });
+                                                </script>
+                                            </div>
+                                            <!-- End AdSlot 5 -->
                                     </div>  
                                              
-                                    <div class="category-lmt"><a href="http://localhost:10008/category/Manta/"><p style="color:white">Manta</p></a></div>
+                                    <div class="category-lmt"><a href="https://oromartv.com/category/manta/"><p style="color:white">Manta</p></a></div>
                                         
                                         <div class="noticias-list-flex noticias-list-flex-deportes">
                                             <?php
@@ -1022,26 +1053,47 @@
                     <section class="guardianes-oromar">                   
                         <div class="noticias-wrapper">                      
                             <div class="guardianes-wrapper">
-                                <div class="big-title"><h2>GUARDIANES DEL PACÍFICO</h2><P>Un espacio comprometido con el cuidado de nuestras playas y océanos.</P><p class="button">VER MÁS</p></div>
+                                <div class="big-title"><h2>GUARDIANES DEL PACÍFICO</h2><P>Un espacio comprometido con el cuidado de nuestras playas y océanos.</P><a href="https://oromartv.com/category/guardianes-del-pacifico/"><p class="button">VER MÁS</p></a></div>
                             </div>   
-                            <!-- Swiper -->
+                         
                             
                             <div class="swiper mySwiper swiper-guardianes">
-                                <div class="swiper-wrapper">
-                                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                                <div class="swiper-slide guardianes-slide"><img src="<?php the_post_thumbnail_url('main-post') ?>" alt=""><div class="overlay"></div><div><h3><?php echo wp_trim_words( get_the_title(), 11)?></h3></div></div>
-                                <?php endwhile; else: ?>
+                            <div class="swiper-wrapper">
+                                <?php 
+                                // Argumentos para WP_Query
+                                $args = array(
+                                    'post_type' => 'video', // Asegúrate de que es el tipo correcto, cambia si es necesario
+                                    'posts_per_page' => 5, // Limita a 5 posts
+                                    'category_name' => 'guardianes-del-pacifico', // Filtra por la categoría deseada
+                                );
+
+                                // Crear una nueva instancia de WP_Query
+                                $the_query = new WP_Query($args);
+
+                                // El Loop
+                                if ( $the_query->have_posts() ) : 
+                                    while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                                        <div class="swiper-slide guardianes-slide">
+                                            <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('main-post'); ?>" alt="<?php the_title(); ?>"></a>
+                                            <div class="overlay"></div>
+                                            <div><a href="<?php the_permalink() ?>"><h3><?php echo wp_trim_words( get_the_title(), 11); ?></h3></a></div>
+                                        </div>
+                                    <?php endwhile;
+                                    // Restaura el postdata global de WordPress para restablecer la consulta global
+                                    wp_reset_postdata();
+                                else: ?>
                                     <article>
-                                    <p>No hay contenido a mostrar </p>
+                                        <p>No hay contenido a mostrar</p>
                                     </article>
-                                        <?php endif; ?>
-                                </div>
-                            </div>   
+                                <?php endif; ?>
+                            </div>
+</div>
+   
                             <div class="overlay"></div>          
                         </div>
                         
                     </section>
-                    <section class="noticias-oromar">
+                    <!-- <section class="noticias-oromar">
                     
                         <div class="vida-sana-wrapper">
                        
@@ -1069,7 +1121,7 @@
                             
                             <div class="noticias-list">
                            
-                            <div>  
+                            <div class="noticias-list-inner">  
                                     <div class="category-lmt"><p>Vida Sana</p></div>
                                             
                                     <div class="noticias-list-flex">
@@ -1112,7 +1164,7 @@
                             </div>
                         </div>
                     
-                                </section>
+                                </section> -->
                          
                     
     

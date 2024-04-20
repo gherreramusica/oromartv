@@ -46,7 +46,7 @@
                     color: rgb(0, 0, 0);
                     li{
                         font-weight: 200;
-                        font-size: 18px; 
+                        font-size: 15px; 
                         font-family: 'Sofia Sans', sans-serif;
                         text-transform: uppercase;
                     }
@@ -86,6 +86,7 @@
                     a{
                         color: white;
                         text-transform: uppercase;
+                        font-size: 13px;
                     }
                 }
                 .social-media-header{ 
@@ -151,7 +152,7 @@
                         color: #ffffff;  
                         a{
                             color: rgb(255, 255, 255);
-                            font-size: 15px;
+                            font-size: 13px;
                             font-weight: 400;
                             font-family: 'Sofia Sans', sans-serif;
                         }
@@ -185,14 +186,25 @@
             border: .1px solid #c2c2c2;
         }
     }  
+
     .nav-menu-wrapper{
         width: 90%;
         margin: auto;
         padding-top: 50px;
+        .offcanvas-header{
+            border-bottom: 1px solid white;
+            padding: 5px 0px;
+         
+        }
         .section-menu{
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: start;
+            gap: 20px;
+            a{
+                font-size: 14px;
+                font-weight: 400;
+            }
         }
         div{
             margin-bottom: 5px;
@@ -204,11 +216,11 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-top: 20px !important;
+        margin-top: 0px !important;
         margin-bottom: 10px;
         padding-top: 10px;
         border-top: 1px solid #2e2e2e;
-        margin: auto;
+        margin: initial;
         border: none;
         width: 90%;
         justify-content: start;
@@ -246,7 +258,7 @@
 
 
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1050px) {
 
     .header-container {
         height: 61px;
@@ -297,7 +309,7 @@
                             transition: 0.3s;
                         }
                         
-                          .bar.show::before {
+                        .bar.show::before {
                             content: "";
                             width: 20px;
                             height: 2px;
@@ -308,7 +320,7 @@
                             transition: 0.3s;
                         }
                         
-                          .bar.show::after {
+                        .bar.show::after {
                             content: "";
                             width: 20px;
                             height: 2px;
@@ -319,7 +331,7 @@
                             transition: 0.3s;
                         }
                         
-                          .bar.show {
+                        .bar.show {
                             width: 30px;
                             height: 2px;
                             background-color: #ffffff;

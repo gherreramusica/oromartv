@@ -30,10 +30,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                .toggle {
-                    
-                    
-                }
                 .logo-noticias{
                     background-color: var(--noticias-color);
                     padding: 10px;
@@ -202,7 +198,7 @@
         form{
             margin-bottom: 20px;
             .search-field{
-                width: 300px;
+                width: 90%;
                 height: 30px;
                 background-color: black;
                 border: none;
@@ -211,6 +207,7 @@
                 outline: none;
                 font-size: 20px;
                 font-weight: 900;
+                border-radius: 0px;
             }
             .search-submit{
                 appearance: none;
@@ -250,11 +247,10 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-top: 20px !important;
+        margin-top: 0px !important;
         margin-bottom: 10px;
         padding-top: 10px;
         border-top: 1px solid #2e2e2e;
-        margin: auto;
         border: none;
         width: 90%;
         justify-content: start;
@@ -369,35 +365,7 @@
                             border-radius: 100%;
                             transition: 0.3s;
                         }
-                        
-                          .bar.show::before {
-                            content: "";
-                            width: 20px;
-                            height: 2px;
-                            position: absolute;
-                            left: 5px;
-                            background-color: #ffffff;
-                            transform: rotate(-40deg);
-                            transition: 0.3s;
-                        }
-                        
-                          .bar.show::after {
-                            content: "";
-                            width: 20px;
-                            height: 2px;
-                            position: absolute;
-                            left: 5px;
-                            background-color: #ffffff;
-                            transform: rotate(40deg);
-                            transition: 0.3s;
-                        }
-                        
-                          .bar.show {
-                            width: 30px;
-                            height: 2px;
-                            background-color: #ffffff;
-                            background-color: transparent;
-                        }
+                       
                     }
                     .logo-noticias {
                         padding: 0px!important;

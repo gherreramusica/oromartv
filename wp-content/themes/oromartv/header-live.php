@@ -4,6 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><?php wp_title(); ?></title>
     <?php wp_head();?>
 </head>
 <body class="dark">
@@ -18,11 +19,10 @@
                             <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/imagenes/OTV800.png" alt=""></a>
                         </div>
                         <nav>
-                            <li><a style="color: white" href="<?php echo site_url('/') ?>">Inicio</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">Noticias Oromar</a></li>
-                            <li><a style="color: white" href="<?php echo site_url('/deportes') ?>">Deportes Oromar</a></li>
-                            
-                                              
+                                <li><a style="color: white" href="<?php echo site_url('/noticiasoromar') ?>">NOTICIAS OROMAR </a></li>
+                                <li><a style="color: white" href="https://oromartv.com/category/deportes-nti/">DEPORTES OROMAR</a></li>
+                                <li><a style="color: white" href="<?php echo site_url('/noticieros') ?>">NOTICIEROS ANTERIORES</a></li>   
+                                <li><a style="color: white" href="<?php echo site_url('/reportes') ?>">REPORTE DE SEÑAL</a></li>                                             
                         </nav>
                         
                     </div>
@@ -42,54 +42,10 @@
                                 <a href=""><i class="bi bi-tiktok"></i></a>
                             </div>
                         <div class="al-aire">
-                            <div class="vivo-header vivo"><a href="<?php echo site_url('/livestream') ?>"><span></span><span></span><p>Al AIRE</p></a></div>
+                            <div class="vivo-header vivo"><a href="<?php echo site_url('/tv-en-vivo') ?>"><span></span><span></span><p>Al AIRE</p></a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <div class="nav-menu">
-            <div class="nav-menu-wrapper">
-                <div class="offcanvas-header">
-                    <h3>Secciones</h3>
-                    <hr>
-                </div>
-                
-                <div class="section-menu">
-                    <div class="sectionA">
-                        <div><a href="<?php echo site_url('/noticias') ?>">NOTICIAS</a></div>
-                        <div><a href="<?php echo site_url('/deportes') ?>">DEPORTES</a></div>
-                        <div><a href="<?php echo site_url('/programas') ?>">PROGRAMAS</a></div>
-                    </div>
-                    <div class="sectionB">
-                        <div><a href="<?php echo site_url('/noticias') ?>">EN VIVO</a></div>
-                        <div><a href="<?php echo site_url('/deportes') ?>">COMUNIDAD</a></div>
-                        <div><a href="<?php echo site_url('/programas') ?>">TRIVIAS</a></div>
-                    </div>
-                </div><br>
-                <div class="offcanvas-header">
-                    <h3>Links Utiles</h3>
-                    <hr>
-                </div>
-                <div class="section-menu">
-                    <div class="sectionA">
-                    <div><a href="<?php echo site_url('/noticias') ?>">LINEA EDITORIAL</a></div>
-                        <div><a href="<?php echo site_url('/deportes') ?>">RENDICION DE CUENTAS</a></div>
-                        <div><a href="<?php echo site_url('/noticias') ?>">POLITICA DE PRIVACIDAD</a></div>
-                    </div>
-                    <div class="sectionB">
-                        <div><a href="<?php echo site_url('/noticias') ?>">EN VIVO</a></div>
-                        <div><a href="<?php echo site_url('/deportes') ?>">COMUNIDAD</a></div>
-                        <div><a href="<?php echo site_url('/programas') ?>">TRIVIAS</a></div>
-                    </div>
-                </div>
-                <div class="social-media">
-                                                        <div class="icon"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
-                                                        <div class="icon"><a href=""><i class="fa-brands fa-x-twitter"></i></a></div>
-                                                        <div class="icon"><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
-                                                        <div class="icon"><a href=""><i class="fa-regular fa-envelope"></i></a></div>
-                                                        
-                                                </div>
-            </div>
-            
-        </div>
+        <?php include('offcanvas.php') ?>

@@ -1,6 +1,5 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Archivo:wght@200;400;500;700&family=Bebas+Neue&family=DM+Serif+Display&family=Hanken+Grotesk:wght@200;400;800&family=Paytone+One&family=Poppins:wght@200;400;500;800&family=Sofia+Sans+Extra+Condensed:wght@200;600;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 
 * {
@@ -27,7 +26,7 @@
     --live-heading-font: 'Hanken Grotesk', sans-serif;
     --header-md-titles: 30px;
     --lg-title: 25px;
-    --md-title: 22px;
+    --md-title: 20px;
     --sm-title: 18px;
     --full-container: 100%;
     --lg-container: 95%;
@@ -71,6 +70,19 @@ a:hover{
 }
 img{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
+.editorial-wrapper{
+    width: 95%;
+    margin: auto;
+    padding: 50px 0px;
+}
+#login #reg_passmail, #login form .indicator-hint {
+    color: white;
+}
+
+.login #nav {
+    color: white;
+}
+

@@ -107,7 +107,7 @@
                         </div>
                         
                         <div class="featured-program  featured-program-fp">
-                            <a href="<?php echo site_url('/livestream') ?>"><img  src="<?php echo $programa_actual['imagen']?>" alt="">
+                            <a href="<?php echo site_url('/tv-en-vivo') ?>"><img  src="<?php echo $programa_actual['imagen']?>" alt="">
                             <progress value="<?php echo $porcentaje_transcurrido?>" max="100"></progress>
                             <div class="overlay"></div></a>
                         </div>

@@ -4,6 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><?php wp_title(); ?></title>
     <?php wp_head();?>
 </head>
 <body class="body-deportes">
@@ -17,11 +18,11 @@
                     </div>
                     <nav class="nav-deportes">
                     <li><a style="color: white" href="<?php echo site_url('/') ?>">Inicio</a></li> 
-                        <li><a style="color: white" href="<?php echo site_url('/noticias') ?>">Noticias</a></li>
-                        <li><a style="color: white" href="<?php echo site_url('/livestream') ?>">Señal en vivo</a></li>
+                        <li><a style="color: white" href="<?php echo site_url('/noticiasoromar') ?>">Noticias</a></li>
+                        <li><a style="color: white" href="<?php echo site_url('/tv-en-vivo') ?>">Señal en vivo</a></li>
                                   
                     </nav>
-                    
+                       n m 09om, n
                 </div>
                 
                 <div class="right-header">
@@ -47,29 +48,29 @@
         <div class="nav-menu">
             <div class="nav-menu-wrapper">
                 <div class="offcanvas-header">
-                    <h3>Secciones</h3>
+                    <h3>SECCIONES</h3>
                     <hr>
                 </div>
                 
                 <div class="section-menu">
                     <div class="sectionA">
-                        <div><a href="<?php echo site_url('/noticias') ?>">NOTICIAS</a></div>
-                        <div><a href="<?php echo site_url('/deportes') ?>">DEPORTES</a></div>
+                        <div><a href="<?php echo site_url('/noticiasoromar') ?>">NOTICIAS</a></div>
+                        <div><a href="<?php echo site_url('/deportesoromar') ?>">DEPORTES</a></div>
                         <div><a href="<?php echo site_url('/programas') ?>">PROGRAMAS</a></div>
                     </div>
                     <div class="sectionB">
-                        <div><a href="<?php echo site_url('/noticias') ?>">EN VIVO</a></div>
+                        <div><a href="<?php echo site_url('/tv-en-vivo') ?>">EN VIVO</a></div>
                         <div><a href="<?php echo site_url('/deportes') ?>">COMUNIDAD</a></div>
                         <div><a href="<?php echo site_url('/programas') ?>">TRIVIAS</a></div>
                     </div>
                 </div><br>
                 <div class="offcanvas-header">
-                    <h3>Links Utiles</h3>
+                    <h3>LINKS ÚTILES</h3>
                     <hr>
                 </div>
                 <div class="section-menu">
                     <div class="sectionA">
-                    <div><a href="<?php echo site_url('/noticias') ?>">LINEA EDITORIAL</a></div>
+                    <div><a href="<?php echo site_url('/politica-editorial') ?>">LINEA EDITORIAL</a></div>
                         <div><a href="<?php echo site_url('/deportes') ?>">RENDICION DE CUENTAS</a></div>
                         <div><a href="<?php echo site_url('/noticias') ?>">POLITICA DE PRIVACIDAD</a></div>
                     </div>
@@ -80,12 +81,13 @@
                     </div>
                 </div>
                 <div class="social-media">
-                                                        <div class="icon"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
-                                                        <div class="icon"><a href=""><i class="fa-brands fa-x-twitter"></i></a></div>
-                                                        <div class="icon"><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
-                                                        <div class="icon"><a href=""><i class="fa-regular fa-envelope"></i></a></div>
+                    <a href="https://twitter.com/oromartv"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://facebook.com/oromartvec"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/oromartelevision"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCzFe9cWL6OUi141xZj1pzkA"><i class="bi bi-youtube"></i></a>
+                    <a href="https://tiktok.com/oromartelevision"><i class="bi bi-tiktok"></i></a>
                                                         
-                                                </div>
+                </div>
             </div>
             
         </div>

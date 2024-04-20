@@ -19,22 +19,17 @@
         <div class="homepage">
         <div class="main-out">
     <h3>
-        <?php
-        if (is_category()) {
-            single_cat_title();
-        }
-        if (is_author()) {
-            echo 'Publicaciones de ' . get_the_author();
-        }
-        ?>
+        MANTA EN VIVO
     </h3><br>
-
+    <div class="manta-live">
+    <script type="text/javascript" src="https://services.brid.tv/player/build/brid.min.js"></script> <div id="Brid_13142723" class="brid" style="width:16;height:9;" > </div> <script type="text/javascript"> $bp("Brid_13142723", {"id":"38283","width":"16","height":"9","video":"1212206"}); </script>
+    </div><br>
     <div class="archive-post">
         <section class="list-post-archive">
             <?php
             $args = array(
                 'post_type'      => array('post', 'video'), // Incluir tanto posts como videos
-                'category_name'  => get_query_var('category_name'), // Obtener el nombre de la categoría actual
+                'category_name'  => 'manta', // Obtener el nombre de la categoría actual
                 'posts_per_page' => 10 // Mostrar todos los posts
             );
 
@@ -107,13 +102,13 @@
                                         </div>
                                 </div>
                         
-                                            <!-- <div class="newsletter">
-                                                <div class="mail-chimp">
-                                                    <div id="mc_embed_shell">
+                        <div class="newsletter">
+                                <div class="mail-chimp">
+                                        <div id="mc_embed_shell">
         
-                                                        <div id="mc_embed_signup">
+                                                <div id="mc_embed_signup">
                                                                 <h2>Suscríbete a nuestra Newsletter</h2>
-                                                            <form action="https://oromartv.us10.list-manage.com/subscribe/post?u=87992478698b2160f5217831e&amp;id=4abab499a5&amp;f_id=00dbc8e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
+                                                        <form action="https://oromartv.us10.list-manage.com/subscribe/post?u=87992478698b2160f5217831e&amp;id=4abab499a5&amp;f_id=00dbc8e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
                                                                 <div id="mc_embed_signup_scroll">
                                                                 
                                                                         <div class="mc-field-group">
@@ -134,16 +129,12 @@
                                                                                 </div>
                                                                         </div>
                                                                 </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-        
+                                                        </form>
                                                 </div>
-                                            </div> -->
-                                            <div class="newsletter-cf7">
-                                                <h3>Suscríbete a nuestra Newsletter</h3><br>
-                                                <div class="cf7"><?php echo do_shortcode('[contact-form-7 id="a8d6f15" title="Newsletter"]') ?></div>
-                                            </div>
+                                         </div>
+        
+                                </div>
+                                </div>
                 </div>
         </div>
 

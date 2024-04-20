@@ -46,7 +46,7 @@
                     color: rgb(0, 0, 0);
                     li{
                         font-weight: 200;
-                        font-size: 18px; 
+                        font-size: 15px; 
                         font-family: 'Sofia Sans', sans-serif;
                         text-transform: uppercase;
                     }
@@ -71,8 +71,8 @@
                         font-size: 12px;
                         font-weight: 200;
                         img{
-                            width: 40px;
-                            height: 40px;
+                            width: 30px;
+                            height: 30px;
                         }
                         a{
                             font-size: 18px;
@@ -197,6 +197,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: start;
+            gap: 20px;
+            a{
+                font-size: 14px;
+            }
         }
         div{
             margin-bottom: 5px;

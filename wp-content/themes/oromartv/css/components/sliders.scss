@@ -31,7 +31,8 @@
                         color: white;
                         font-size: 100px;
                         font-weight: 900;
-                        font-family: 'Sofia Sans Extra Condensed', sans-serif;     
+                        font-family: 'Sofia Sans Extra Condensed', sans-serif;  
+                        text-transform: uppercase;   
                     }  
                     p{
                         color: white;
@@ -78,17 +79,12 @@
         background-color: white !important ;
     }
   }
-
- 
 .commentCount p{
     font-size: 15px;
     
 }
 
-
-
 @media only screen and (max-width: 900px) {
- 
         
     .hero-slider {
         width: 100%;
@@ -132,7 +128,7 @@
                         }
                         button{
                             margin-top: 10px;
-                            padding: 10px;
+                            padding: 5px;
                             background-color: var(--secondary-color);
                             color: white;
                             border: none;
@@ -168,8 +164,7 @@
         .swiper-pagination-bullet{
             background-color: white !important ;
         }
-      }
-
+    }
 }
     
 
@@ -217,12 +212,14 @@
                         padding: 3px;
                         display: grid;
                         color: white;
+                        font-size: 25px;
                     }
                 }
                 a{
                     img{
                         overflow: hidden;
                         border-radius: 10px 10px 0px 0px;
+                        display: block;
                     }
                 }
             }
@@ -246,11 +243,10 @@
         .swiper-button-next:after{
             font-size: 15px !important;
         }
-
     }
     .swiper-button-prev {
         color: #000000; 
-        background-color: #ffffff;
+        background-color: #ffffffc0;
         width: 35px;
         height: 35px;
         border-radius: 100%;
@@ -264,10 +260,10 @@
 
 .homepage-container-wrapper{
     .guardianes-oromar{
-        width: 100%;
         height: 100vh;
+        width: 100%;
         padding-bottom:100px ;
-        // background-image: url('imagenes/ballena-azul.webp');  
+        background-image: url('/imagenes/ballena-azul.webp'); 
         background-repeat:no-repeat ;
         background-size: cover;
         display: grid;
@@ -283,6 +279,15 @@
             grid-template-rows: repeat(6, auto);
             gap: 80px;
             justify-content: end;
+            .overlay{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                background-image: linear-gradient(to bottom, #1e1e1e 0%, rgba(30, 30, 30, 0.5647058824) 50%, rgba(30, 30, 30, 0.5647058824) 50%, rgba(30, 30, 30, 0.8549019608) 70%, rgba(30, 30, 30, 0.8549019608) 70%, #1e1e1e 100%);
+            }
             .swiper-guardianes {
                 width: 100%;
                 z-index: 3 !important;
@@ -296,6 +301,7 @@
                     height: initial !important;
                     h3{
                         padding: 15px;
+                        text-transform: uppercase;
                         font-size: 30px;
                         line-height: 30px;
                         z-index: 3;
@@ -304,14 +310,18 @@
                     }
                 }
                 .guardianes-slide {
-                    border-radius: 18px;
+                    border-radius: 5px;
                     font-size: 22px;
                     font-weight: bold;
                     color: #fff;
                     background-color: rgb(72, 72, 72);
+                    a{
+                        color: white;
+                    }
                     img {
                         display: block;
                         width: 100%;
+                        height: auto;
                     }            
                 }        
                 .overlay{
@@ -402,6 +412,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                width: 95%;
                 .guardianes-wrapper{
                     .big-title{
                         h2{

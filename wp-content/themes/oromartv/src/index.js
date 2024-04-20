@@ -1,4 +1,5 @@
 import '/css/pages/enter.scss';
+import '/css/pages/bln.scss';
 import '/css/base/global.scss';
 import '/css/components/scrollup.scss';
 import '/css/components/sliders.scss';

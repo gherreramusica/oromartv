@@ -2,29 +2,33 @@
     <div class="logo-comentarios">
         <a href="<?php bloginfo('url'); ?>"><img width="50px" src="<?php bloginfo('template_url'); ?>/imagenes/OTV400.png" alt=""></a>
     </div>
-    <div><h3>Comentarios</h3></div>
-    <div><?php if ( have_comments() ) : ?>
-		<h4 class="comments-title">
-			<?php
-			printf(
-				_nx(
-					'Una comentario a "%2$s"',
-					'%1$s comentarios a "%2$s"',
-					get_comments_number(),
-					'comments title',
-					'twentythirteen'
-				),
-				number_format_i18n( get_comments_number() ),
-				'' . get_the_title() . ''
-			);
-			?>
-		</h4><?php endif; ?></div>
+    <div>
+        <h3>Comentarios</h3>
+        <?php if ( have_comments() ) : ?>
+            <h4 class="comments-title">
+                <?php
+                printf(
+                    _nx(
+                        'Un comentario a "%2$s"',
+                        '%1$s comentarios a "%2$s"',
+                        get_comments_number(),
+                        'comments title',
+                        'twentythirteen'
+                    ),
+                    number_format_i18n( get_comments_number() ),
+                    '' . get_the_title() . ''
+                );
+                ?>
+            </h4>
+        <?php endif; ?>
+    </div>
 </div>
 <div class="comentario-principal">
-            <?php comment_form(); ?></div>
-<?php
+    <?php comment_form(); ?>
+</div>
 
-$page_id = 50;
+<?php
+$page_id = 293;
 // Obtener solo los comentarios aprobados
 $args = array(
     'status' => 'approve',
@@ -35,10 +39,8 @@ $args = array(
 $comments_query = new WP_Comment_Query();
 $comments = $comments_query->query($args);
 
-// Array para almacenar los comentarios padres
-$parent_comments = array();
-
 // Organizar los comentarios por comentario padre
+$parent_comments = array();
 foreach ($comments as $comment) {
     if ($comment->comment_parent == 0) {
         $parent_comments[$comment->comment_ID] = $comment;
@@ -49,30 +51,24 @@ foreach ($comments as $comment) {
 foreach ($parent_comments as $parent_id => $parent_comment) {
     // Mostrar el comentario padre
     ?>
-   
     <div class="oromartv-comments">
-        
         <div class="oromartv-comment-wrapper">
             <div class="author-photo">
-                <?php
-                // Obtener el avatar del autor del comentario padre
-                echo get_avatar(get_comment_author_email($parent_comment), 40);
-                ?>
+                <?php echo get_avatar(get_comment_author_email($parent_comment), 40); ?>
             </div>
-            <!-- Mostrar el contenido del comentario padre -->
             <div class="comment-wrapper">
                 <div class="top-card">
                     <div class="author-name"><?php echo get_comment_author($parent_comment); ?></div>
-                    <div class="post-date"><?php
+                    <div class="post-date">
+                        <?php
                         // Obtener la marca de tiempo del comentario
                         $parent_comment_timestamp = strtotime($parent_comment->comment_date);
-
                         // Obtener la fecha relativa "hace tantos días"
                         $parent_comment_date_diff = human_time_diff($parent_comment_timestamp, current_time('timestamp')) . ' atrás';
-
                         // Mostrar la fecha relativa
                         echo $parent_comment_date_diff;
-                        ?></div>
+                        ?>
+                    </div>
                 </div>
                 <div class="post-content"><?php comment_text($parent_comment); ?></div>
                 <div class="reply-like">
@@ -85,20 +81,13 @@ foreach ($parent_comments as $parent_id => $parent_comment) {
                             'before' => '<span class="reply-link">',
                             'after' => '</span>'
                         ), $parent_comment->comment_ID, $parent_comment->comment_post_ID);
-                  
                         ?>
-                    
                     </div>
-                    <!-- <div class="thumbs">
-                                <div class="thumbs-up"><i class="fa-solid fa-heart fa-xs"></i></div>
-                                <span id="likeCount">0</span>
-                    
-                    </div> -->
                 </div>
             </div>
         </div>
 
-        <!-- Mostrar respuestas (comentarios hijos) -->
+        <!-- Mostrar respuestas (comentarios hijos) dentro del comentario padre -->
         <?php
         $child_args = array(
             'parent' => $parent_id,
@@ -111,25 +100,21 @@ foreach ($parent_comments as $parent_id => $parent_comment) {
             ?>
             <div class="child-comment">
                 <div class="author-photo">
-                    <?php
-                    // Obtener el avatar del autor del comentario hijo
-                    echo get_avatar(get_comment_author_email($child_comment), 20);
-                    ?>
+                    <?php echo get_avatar(get_comment_author_email($child_comment), 20); ?>
                 </div>
-                <!-- Mostrar el contenido del comentario hijo -->
                 <div class="comment-wrapper">
                     <div class="top-card">
                         <div class="author-name"><?php echo get_comment_author($child_comment); ?></div>
-                        <div class="post-date"><?php
-                        // Obtener la marca de tiempo del comentario
-                        $parent_comment_timestamp = strtotime($parent_comment->comment_date);
-
-                        // Obtener la fecha relativa "hace tantos días"
-                        $parent_comment_date_diff = human_time_diff($parent_comment_timestamp, current_time('timestamp')) . ' atrás';
-
-                        // Mostrar la fecha relativa
-                        echo $parent_comment_date_diff;
-                        ?></div>
+                        <div class="post-date">
+                            <?php
+                            // Obtener la marca de tiempo del comentario
+                            $child_comment_timestamp = strtotime($child_comment->comment_date);
+                            // Obtener la fecha relativa "hace tantos días"
+                            $child_comment_date_diff = human_time_diff($child_comment_timestamp, current_time('timestamp')) . ' atrás';
+                            // Mostrar la fecha relativa
+                            echo $child_comment_date_diff;
+                            ?>
+                        </div>
                     </div>
                     <div class="post-content"><?php comment_text($child_comment); ?></div>
                     <div class="reply-like">
@@ -142,13 +127,8 @@ foreach ($parent_comments as $parent_id => $parent_comment) {
                                 'before' => '<span class="reply-link">',
                                 'after' => '</span>'
                             ), $child_comment->comment_ID, $child_comment->comment_post_ID);
-                     
                             ?>
                         </div>
-                        <!-- <div class="thumbs">
-                            <div class="thumbs-up"><i class="fa-solid fa-heart fa-xs"></i></div>
-                        
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -159,6 +139,3 @@ foreach ($parent_comments as $parent_id => $parent_comment) {
     <?php
 }
 ?>
-
-
-

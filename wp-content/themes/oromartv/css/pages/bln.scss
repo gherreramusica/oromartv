@@ -1,0 +1,426 @@
+
+.bln-container{
+    background-color: #000000;
+    .ad-banner-top{
+        .article-ad{
+            background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 40px, #0a0a0a 40px, #0a0a0a 60px);
+        }
+        
+    }
+    .bln-container-wrapper{
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-image: url("/imagenes/BLN-banner.jpeg");
+        background-position: center left;
+        position: relative;
+        height: 250px;
+        .logo{
+            z-index: 1;
+            img{
+                width: 300px;
+            }
+        }
+        .guerreros-heading{
+            z-index: 1;
+            h1{
+                color: white;
+                font-size: 80px;
+                font-weight: 1000;              
+                font-family: 'Sofia Sans Extra Condensed', sans-serif;
+            }
+            
+        }
+        .overlay{
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.48) 0%, rgb(30 30 30 / 70%) 50%, rgb(30 30 30 / 70%) 50%, rgb(30 30 30 / 80%) 70%, rgb(30 30 30 / 80%) 70%, #000000 100%);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        
+    }
+    .bln-main-wrapper{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        max-width: var(--sm-container);
+        margin: auto;
+        .voting {
+            padding-top: 100px;
+            grid-column: 1/-1;
+            grid-row: 1/-1;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+               .title-branded{
+                   font-size: 80px;
+                   color: white;
+                   font-family: 'Sofia Sans Extra Condensed', sans-serif;
+                   font-weight: 900;
+                   line-height: 1;
+                   text-align: center;
+                   .branding-logo{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                   }
+                   p{
+                       font-size: 20px;
+                       font-weight: 100;
+                    }
+                    img{
+                        width: 150px;
+                    }
+                }
+               .encuesta{             
+                    background-image: url('/imagenes/iphone14.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    width: 350px;
+                    height: 780px;
+                    overflow: auto; 
+                    position: relative;
+               .encuesta-wrapper{
+                width: 85%;
+                margin: auto;
+                height: 600px;
+                overflow-y: auto;
+                position: absolute;
+                top: 90px;
+                left: 27px;
+                overflow-x: hidden;
+                }
+                          
+            }
+       }
+       .ad-banner-medium{
+        grid-column: 1/-1;
+        .article-ad{
+            margin: 50px 0px;
+            text-align: center;
+            padding: 20px;
+            background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 40px, #0a0a0a 40px, #0a0a0a 60px);
+        }
+       }
+       .bln-heading{
+        margin-top: 50px;
+        padding-bottom: 10px;
+        h2{
+            color: white;
+            font-size: 40px ;
+            font-weight: 900;
+            white-space: nowrap;
+        }
+       }
+       .bln-news{
+            grid-column: 1/8;
+            .unitarios{
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+                background-color: #222222;
+                margin-bottom: 50px;
+                gap: 15px;
+                border-radius: 5px;
+                h2 {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                .card {
+                    padding-right: 9px;
+                    flex-basis: 60%;
+                    p{
+                        font-size: 23px !important;
+                        line-height: 30px;
+                        color: white;
+                    }
+                }          
+                .thumb{
+                    flex-basis: 40%;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    max-height: 250px;
+                    max-width: 300px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        display: block;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                }
+            }
+       }
+       .bln-sidebar{
+            grid-column: 9/-1;
+            .most-popular{
+                color: white;
+                background-color: #222222;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                padding: 10px;
+                div{
+                    counter-reset: seleccion;
+                }
+                li{
+                    counter-increment: counter;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                li::before{
+                    content: counter(counter);
+                    border-radius: 100%;
+                    font-size: 50px;
+                    color: var(--secondary-color);
+                    font-weight: 1000;
+                }
+                a{
+                    color: white;
+                }
+                
+            }
+            .newsletter-cf7{
+                color: white;
+                background-color: #222222;
+                border-radius: 5px;
+                padding: 10px;
+                h3{
+                    font-size: 20px;
+                }
+                form{
+                    div{
+                        .wpcf7-form-control-wrap{          
+                            input{
+                                outline: none;
+                                appearance: none;
+                                border-radius: 0px;
+                                border: none;
+                                height: 35px;                     
+                            }
+                           
+                        } 
+                    }
+                    .wpcf7-submit{
+                        padding: 10px;
+                        background-color: var(--secondary-color);
+                        color: white;
+                        border: none;
+                        border-radius: 0px;
+                    }
+                                     
+                    div{
+                        padding-bottom: 10px;
+                    }
+                    textarea{
+                        appearance: none;
+                        resize: none;
+                        padding-top: 10px;
+                        width: -webkit-fill-available;
+                        outline: none;
+                        
+                    }
+                    
+                }
+                a{
+                    color: var(--secondary-color);
+                }
+                
+                
+            }
+            .single-ads{
+                color: white;
+            }
+       }
+    }
+    
+    
+}
+// .GER-live{
+//     background-image: url('https://oromartv.com/wp-content/uploads/2024/04/tv.png');
+//     height: 800px;
+//     width: 100%;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     position: relative;
+//     .overlay{
+//         background-image: linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(30 30 30 / 0%) 50%, rgb(30 30 30 / 0%) 50%, rgb(30 30 30 / 0%) 70%, rgb(30 30 30 / 0%) 70%, #000000 100%);
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//     }
+
+// }
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .bln-container{
+        background-color: #000000;
+        .bln-container-wrapper{
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            background-image: url("/imagenes/BLN-banner.jpeg");
+            background-position: center left;
+            position: relative;
+            height: 250px;
+            .logo{
+                z-index: 1;
+                img{
+                    width: 300px;
+                }
+            }
+            .guerreros-heading{
+                z-index: 1;
+                h1{
+                    color: white;
+                    font-size: 60px;
+                    font-weight: 1000;
+                    
+                    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+                }
+                
+            }
+            .overlay{
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.48) 0%, rgb(30 30 30 / 70%) 50%, rgb(30 30 30 / 70%) 50%, rgb(30 30 30 / 80%) 70%, rgb(30 30 30 / 80%) 70%, #000000 100%);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+            
+        }
+        .bln-main-wrapper{
+            display: block;
+            
+            .voting {
+                padding-top: 100px;
+                grid-column: 1/10;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                   .title-branded{
+                       font-size: 40px;
+                       color: white;
+                       font-family: 'Sofia Sans Extra Condensed', sans-serif;
+                       font-weight: 900;
+                       .branding-logo{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                       }
+                       p{
+                           font-size: 20px;
+                           font-weight: 100;
+                       }
+                   }
+                   .encuesta{
+                   // background-image: url('/imagenes/iphone14.png');
+                   background-repeat: no-repeat;
+                   background-position: center;
+                   width: 350px;
+                   overflow: auto;     
+                 
+               }
+           }
+           .bln-news{
+                grid-column: 1/10;
+                h2{
+                    color: white;
+                    font-size: 40px;
+                }
+                .unitarios{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 15px;
+                    background-color: #222222;
+                    margin-bottom: 50px;
+                    gap: 15px;
+                    border-radius: 5px;
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    .card {
+                        padding-right: 9px;
+                        flex-basis: 60%;
+                        p{
+                            font-size: 18px !important;
+                            line-height: 30px;
+                            color: white;
+                        }
+                    }          
+                    .thumb{
+                        flex-basis: 40%;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        max-height: 200px;
+                        max-width: 300px;
+                        img{
+                            width: 100%;
+                            height: 100px;
+                            display: block;
+                          
+                            object-fit: cover;
+                        }
+                    }
+                }
+           }
+           .sidebar{
+                grid-column: 10/-1;
+                grid-row: 1/-1;
+                padding-top: 100px;
+                .most-popular{
+                    color: white;
+                    div{
+                        background-color: white;
+                        padding: 0px 15px;
+                        position: sticky;
+                        top: 150px;
+                        counter-reset: seleccion;
+                        border-radius: 5px;
+                    }
+                    li{
+                        position: relative;
+                        counter-increment: counter;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    content: counter(counter);
+                    border-radius: 100%;
+                    font-size: 50px;
+                    color: var(--noticias-color);
+                    font-weight: 1000;
+                    a{
+                        color: white;
+                    }
+                    
+                }
+                .newsletter{
+                    color: white;
+                }
+                .single-ads{
+                    color: white;
+                }
+           }
+        }
+        
+        
+    }
+    
+}

@@ -1,9 +1,13 @@
 .body-noticias{
-    background-color: #eeeeee;
-    line-height: 20px;
+    background-color: white;
+  #myBtn{
+    background-color: var(--noticias-color) !important;
+  }
     .noticias-top{
         background-color: white;
         padding-top: 70px;
+        
+       
         .noticias-top-wrapper{
             max-width: 1250px;
             margin: auto;
@@ -12,6 +16,7 @@
             grid-template-rows: repeat(6,auto);
             grid-auto-flow: column;
             gap: 30px;
+            width: 95%;
             .main-video{
                 grid-column-start: 1;
                 grid-column-end: 7;
@@ -122,6 +127,14 @@
                 }
                 .imagen{
                     flex-basis: 30%;
+                    min-height: 100px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
                 .card{
                     flex-basis: 70%;
@@ -151,17 +164,23 @@
                 grid-row-end: -1;
                 img{
                     width: 100%;
-                    height: auto;
+                    height: 100%;
+                    object-fit: cover;
                 }  
                 article {
                     padding: 0px 0px;
                     display: flex;
+                    justify-content: space-between;
                 }  
                 .card{
                     flex-basis: 60%;
                 }
                 .imagen{
                     flex-basis: 40%;
+                    max-height: 70px;
+                    max-width: 115px;
+                    border-radius: 5px;
+                    overflow: hidden;
                 }
                 ul:after{
                     content: "";
@@ -170,8 +189,7 @@
                     top: 0;
                     bottom: 0;
                     right: -15px;
-                    height: 90%;
-                    
+                    height: 90%;   
                 }
                 
                 ul{ 
@@ -200,6 +218,7 @@
                 article {
                     padding: 0px 0px;
                     display: flex;
+                    justify-content: space-between;
                 }  
                 ul li:after{
                     content: "";
@@ -219,6 +238,15 @@
                 }
                 .imagen{
                     flex-basis: 40%;
+                    max-height: 70px;
+                    max-width: 115px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
             .last-programs{
@@ -228,13 +256,16 @@
                 .last-programs-flex{
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
                     gap: 15px;
                     width: 100%;
                     li {
                         flex: 1;
                         max-width: 25%; /* Establece el ancho máximo para asegurar igualdad en el tamaño de los elementos */
                         box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del elemento */
+                        div{
+                            border-radius: 5px;
+                            overflow: hidden;
+                        }
                     }
                 }
                 
@@ -265,17 +296,21 @@
         max-width: var(--sm-container);
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color:#eeeeee ;
+        grid-template-columns: repeat(12, 1fr);
+        background-color:#ffffff ;
         .main-out{
             padding: 15px 15px;
             grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-end: 10;
             .noticias-banner{
                 background-color: white;
                 position: relative;
+                border-radius: 5px;
+                overflow: hidden;
                 .imagen{
                     position: relative;
+                    border-radius: 5px;
+                    overflow: hidden;
                     .overlay-noticias-banner{
                         /* background: linear-gradient(0.96turn, #1e1e1e00 20%, #1e1e1e 70%); */
                 width: 100%;
@@ -319,6 +354,7 @@
                     margin-top: -150px;
                     z-index: 3;
                     position: relative;
+                    border-radius: 5px;
                 }
                 main{
                     display: grid;
@@ -330,6 +366,10 @@
             .main-middle-noticias {
                 background-color: white;
                 padding: 15px;
+                border-radius: 5px;
+                .card{
+                    border-radius: 5px;
+                }
                 .body-wrapper{
                     position: relative;
                     margin: 0;
@@ -360,6 +400,16 @@
                     .content{
                         padding-top: 10px;
                     }
+                    .card{
+                        border-radius: 5px;
+                        overflow: hidden;
+                        height: 250px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
                 }
                 .list-post{            
                     margin-bottom: 0px;
@@ -374,6 +424,15 @@
                         margin-bottom: 20px;
                         .card{
                             flex-basis: 37%;
+                            max-width: 115px;
+                            max-height: 70px;
+                            border-radius: 5px;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
                         }
                         .content{
                             padding-left: 10px;
@@ -391,8 +450,10 @@
             justify-content: space-between;
             padding: 15px;
             background-color: white;
-            margin-bottom: 50px;
             gap: 15px;
+            border-bottom: 1px solid #dedede;
+            padding: 30px 0px;
+            
             h2 {
                 font-size: 18px;
                 font-weight: 400;
@@ -407,11 +468,20 @@
             }          
             .thumb{
                 flex-basis: 40%;
+                border-radius: 5px;
+                overflow: hidden;
+                max-height: 200px;
+                max-width: 300px;
                 img{
                     width: 100%;
                     display: block;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
+        }
+        .unitarios:last-of-type{
+            border: none;
         }
         main {
             width: 100%;
@@ -433,7 +503,7 @@
             padding: 15px 0px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+         
         }
     }
 }
@@ -480,7 +550,11 @@
         display: block!important;
         width: 95%;
         margin: auto;
-
+            .Editoriales{
+                li{
+                    padding-top: 10px !important;
+                }
+            }
         .main-video{
             iframe {
                 height: 200px;
@@ -507,6 +581,40 @@
         width: 100%;
         margin: auto;
         grid-template-columns: 1fr!important;
+        .unitarios{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: white;
+            margin-bottom: 50px;
+            gap: 15px;
+            border-radius: 5px;
+            h2 {
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .card {
+                padding-right: 9px;
+                flex-basis: 60%;
+                p{
+                    font-size: 20px !important;
+                    line-height: 30px;
+                }
+            }          
+            .thumb{
+                flex-basis: 40%;
+                border-radius: 5px;
+                overflow: hidden;
+                max-height: 80px !important;
+                max-width: 300px;
+                img{
+                    width: 100%;
+                    display: block;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
         .sidebar {
             padding: 30px 10px!important;
         }

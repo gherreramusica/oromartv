@@ -8,12 +8,13 @@
                                                 $interviewPagePosts = new WP_Query(array(
                                                 'posts_per_page' => 1,
                                                 'category_name' => 'entrevistas',
+                                                'post_type' => 'video'
                                                 
                                                 ));?>
                                                 <?php if ($interviewPagePosts->have_posts() ) : while ($interviewPagePosts->have_posts() ) :$interviewPagePosts->the_post(); ?>
                                             <div class="last-interview">
                                                 <div class="title"><?php the_title();?></div>
-                                                <div class="thumbnail"><a href=""><img src="<?php the_post_thumbnail_url('custom-size');?>" alt=""></a></div>
+                                                <div class="thumbnail"><a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('custom-size');?>" alt=""></a></div>
                                             </div>
                                             <?php endwhile; wp_reset_postdata(); else: ?>
                                                             <article>
@@ -24,9 +25,9 @@
                                                 
                                                 <?php
                                                     $interviewPagePosts = new WP_Query(array(
-                                                    'posts_per_page' => 2,
+                                                    'posts_per_page' => 4,
                                                     'category_name' => 'entrevistas',
-                                                    
+                                                    'post_type' => 'video',
                                                     'offset' => 1
                                                     ));?>
                                                     <?php if ($interviewPagePosts->have_posts() ) : while ($interviewPagePosts->have_posts() ) :$interviewPagePosts->the_post(); ?> 

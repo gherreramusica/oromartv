@@ -4,7 +4,9 @@
     top: 150;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
+    grid-column: 10/-1;
+    
     .latest {
         height: 100%;
         div{
@@ -12,26 +14,44 @@
             padding: 15px;
             position: sticky;
             top: 150px;
+            border-radius: 5px;
         }
     }
     .newsletter{
-        height: 100%;
+    
         .mail-chimp{
             background-color: white;
             padding: 15px;
             margin-top: 30px;
-            position: sticky;
+            
             top: 257px;
+            border-radius: 5px;
         }
     }
     .most-popular{
-        height: 100%;
-        margin-top: 50px;
+      
+        
+        li{
+            position: relative;
+            counter-increment: counter;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        li::before{
+            content: counter(counter); 
+            border-radius: 100%;
+            font-size: 50px;
+            color: var(--noticias-color);
+            font-weight: 1000;
+        }
         div{
             background-color: white;
-            padding: 15px;
+            padding: 0px 15px;
             position: sticky;
             top: 150px;
+            counter-reset: seleccion;
+            border-radius: 5px;
         }
     }
     .most-popular-noticias{
@@ -42,7 +62,7 @@
         font-size: 15px;
     }
     h4{
-        font-weight: 200;
+        font-weight: 600;
         line-height: 25px;
     }
 }
@@ -77,12 +97,40 @@
     
 }
 
-
+.single-sideads{
+    height: 60%;  
+    .single-ads{
+        text-align: center;
+        padding: 20px;
+        position: sticky;
+        top: 300px;
+    }  
+}
 .most-popular-single{
-    margin-top: 200px;
-    position: sticky;
+    padding-top: 30px;
     top: 150px;
+    height: 40%;   
+    .mps{
+       position: sticky;
+       top: 100px;     
+    }   
 }
 .left-side-bar{
     padding: 0px;
+}
+
+@media only screen and (max-width: 1050px){
+    .sidebar{
+        width: 95%;
+        margin: auto;
+        .single-sideads{
+            height: 60%;  
+            .single-ads{
+                text-align: center;
+                padding: 0px!important;
+                position: sticky;
+                top: 300px;
+            }  
+        }
+    }
 }

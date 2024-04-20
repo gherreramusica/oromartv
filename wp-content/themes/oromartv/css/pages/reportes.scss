@@ -1,29 +1,115 @@
-.reportes{
-    padding: 50px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white; 
+
+.dark{
+    .reportes{
+        padding: 50px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white; 
+        .contacto-heading{
+            width: 336px;
+            margin: auto;
+            text-align: center;
+        }
+        h1{
+            font-family: 'Sofia Sans Extra Condensed', sans-serif;
+            font-size: 40px;
+        }
+        .wpcf7-submit{
+            width: 100px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 0px;
+            
+        }
+        form{
+            .tu-mensaje{
+                textarea{
+                    height: 200px;
+                }
+            }
+            p{
+                color: black;
+                padding-bottom: 20px;
+            }
+            input{
+                width: 500px;
+                height: 30px;
+                border-radius: 0px;
+                border: none;
+                border: 1px solid black;
+            }
+            textarea{
+                width: 500px;
+          
+            }
+            .wpcf7-form-control{
+                border-radius: 0px;
+                width: 100%;
+                height: 30px;
+                border: 1px solid black;
+            }
+        }
+        
+    }
 }
-.reportes h1{
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 40px;
+
+
+@media only screen and (max-width: 900px){
+    .body-deportes{
+        .reportes{
+            padding: 50px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white; 
+            h1{
+                font-family: 'Sofia Sans Extra Condensed', sans-serif;
+                font-size: 40px;
+            }
+            .wpcf7-submit{
+                width: 100px;
+                height: 30px;
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 0px;
+                
+            }
+            form{
+                p{
+                    color: black;
+                    padding-bottom: 20px;
+                }
+                input{
+                    width: 300px;
+                    height: 30px;
+                    border-radius: 0px;
+                    border: none;
+                    border: 1px solid black;
+                }
+                textarea{
+                    width: 300px;
+                }
+                .wpcf7-form-control{
+                    border-radius: 0px;
+                    width: 100%;
+                    height: 30px;
+                    border: 1px solid black;
+                }
+            }
+            
+        }
+    }
 }
-.reportes form p{
-    color: black;
-    padding-bottom: 20px;
-}
-.reportes form input{
-    width: 500px;
-    height: 30px;
-}
-form textarea{
-    width: 500px;
-}
-.reportes .wpcf7-submit{
-    width: 100px;
-    height: 30px;
-}
+
+
+

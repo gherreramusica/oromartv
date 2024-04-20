@@ -8,7 +8,11 @@
       loop: true,
       direction: "vertical",
       effect: 'fade',
-      
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -16,6 +20,12 @@
       pagination: {
         el: ".swiper-pagination",
       },
+      breakpoints: {
+       
+        640: {
+          direction: "horizontal",
+          },
+        }
     });
   
    // Siper Carousel videos

@@ -11,7 +11,7 @@
 }
 .noticias-heading-title:before{
     content: "";
-    background-color: red;
+    background-color: rgba(150, 0, 0);
     width: 10px;
     position: absolute;
     top: 0;
@@ -29,3 +29,18 @@
     display: flex;
     justify-content: center;
 }
+.body-noticias{
+    .single-container{
+        .single-main{
+            .left-side-bar{
+                .categoria{
+                    font-size: 25px;
+                    font-weight: 900;
+                    color: black;
+                }
+            }
+            
+        }
+    }
+}   
+

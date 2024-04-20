@@ -17,48 +17,35 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
+
 <div class="comentarios-single">
 	<div class="commentClose" id="commentClose">
-		<a href="<?php the_permalink() ?>">X</a>
+		<a href="<?php echo esc_url(remove_query_arg('showComments')); ?>">X</a>
 	</div>
     <h2>COMENTARIOS</h2><hr><br>  
 	<?php if ( ! comments_open() ) : ?>
-    		<p class="no-comments"><?php _e( 'Comentarios limitados en este post.', 'twentythirteen' ); ?></p>
-		<?php endif; ?>
+    	<p class="no-comments"><?php _e( 'Comentarios limitados en este post.', 'twentythirteen' ); ?></p>
+	<?php endif; ?>
 	<?php comment_form(); ?>                                             
-    
-                                               
 	<div id="comments" class="comments-area">
-
-		<?php if ( have_comments() ) :  ?>
-		<ol class="comment-list">
-			<?php
-			wp_list_comments( array(
-				'style'       => 'ol',
-				'short_ping'  => true,
-				'avatar_size' => 74,
-			) );
-			?>
-		</ol><!-- .comment-list -->
-
+		<?php if ( have_comments() ) : ?>
+			<ol class="comment-list">
+				<?php
+				wp_list_comments( array(
+					'style'       => 'ol',
+					'short_ping'  => true,
+					'avatar_size' => 74,
+					'callback'    => null, // Utilizar la plantilla de comentarios predeterminada
+				) );
+				?>
+			</ol><!-- .comment-list -->
+		<?php endif; // have_comments() ?>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav class="navigation comment-navigation" role="navigation">
-
 				<h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'twentythirteen' ); ?></h1>
 				<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'twentythirteen' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'twentythirteen' ) ); ?></div>
 			</nav><!-- .comment-navigation -->
 		<?php endif; // Check for comment navigation ?>
-
-		
-
-
-
-		<?php endif; // have_comments() ?>
-		
-
-			
-
 	</div><!-- #comments -->
-	
 </div>

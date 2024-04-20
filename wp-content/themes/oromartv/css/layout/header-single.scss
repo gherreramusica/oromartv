@@ -271,6 +271,34 @@
                             border-radius: 100%;
                             transition: .3s;
                         }
+                        .bar.show::before {
+                            content: "";
+                            width: 20px;
+                            height: 2px;
+                            position: absolute;
+                            left: 5px;
+                            background-color: #ffffff;
+                            transform: rotate(-40deg);
+                            transition: 0.3s;
+                        }
+                        
+                        .bar.show::after {
+                            content: "";
+                            width: 20px;
+                            height: 2px;
+                            position: absolute;
+                            left: 5px;
+                            background-color: #ffffff;
+                            transform: rotate(40deg);
+                            transition: 0.3s;
+                        }
+                        
+                        .bar.show {
+                            width: 30px;
+                            height: 2px;
+                            background-color: #ffffff;
+                            background-color: transparent;
+                        }
                     }
                     .logo-noticias{
                         padding: 0px !important;
@@ -285,7 +313,14 @@
                 
             }
         }
+        .show {
+            display: block;
+            z-index: 4;
+            transform: translateY(0%);
+            transition: 0.3s; 
+        }
     }
+    
     
 }
 

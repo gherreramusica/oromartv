@@ -31,3 +31,48 @@
 .mail-chimp form{
     margin-top: 20px;
 }
+
+
+.sidebar{
+    .newsletter-cf7{
+        h3{
+            font-size: 20px !important;
+        }
+        form{
+            
+            .newsletter-wrapper{
+                display: flex;
+                justify-content: space-between;
+                .email-field input{
+                    width: 200px;
+                    height: 40px;
+                    appearance: none;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    outline: none;
+                    border-radius: 0px;
+                }
+            
+                .submit-field{
+                   width: 90px; 
+                   input{
+                        color: #000;
+                        appearance: none;
+                        padding: 10px;
+                        border: none;
+                        border: 2px solid black;
+                        width: 80px;
+                        background-color: white;
+                        border-radius: 0px;
+                        cursor: pointer;
+                    } 
+                    
+                }
+            }
+            
+            
+        }
+    }
+    
+
+}

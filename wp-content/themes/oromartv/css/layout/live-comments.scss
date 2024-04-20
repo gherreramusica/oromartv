@@ -9,9 +9,12 @@
  .comentario-titulo{
     color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     justify-content: center;
+    font-size: 16px;
+    text-align: center;
  }
  .logo-comentarios img{
     width: 50px;
@@ -21,8 +24,7 @@
  }
 
  .must-log-in{
-    font-size: 13px;
-    display: flex;
+    font-size: 14px;
     gap: 5px;
  }
  .must-log-in a{
@@ -45,8 +47,8 @@
     font-weight: 200;
  }
  .oromartv-comment-wrapper img{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
  }
 .child-comment {
         width: 90%;
@@ -124,13 +126,12 @@
  }
  .reply-link a{
     color: white;
+    font-size: 11px;
  }
   .livestream-homepage-container {
     background-color: #1e1e1e;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin-top: 100px;
-
 }
 .guia-hoy{
    display: none;

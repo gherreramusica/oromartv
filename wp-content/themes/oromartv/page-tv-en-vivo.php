@@ -2,51 +2,64 @@
 
 <?php get_header('live'); ?>
         
+<button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="bi bi-chevron-up"></i></button>
+    <script>
+    // Tu función JavaScript aquí
+    function topFunction() {
+    // Inicia el desplazamiento suave
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+            document.getElementById("myBtn").style.opacity = "1";
+        } else {
+            document.getElementById("myBtn").style.opacity = "0";
+        }
+    }
+    </script>
 <div class="container-livestream">
-<div class="sticky-video">
-            <div class="livestream">
-                <div class="livestream-wrapper"><script type="text/javascript" src="https://services.brid.tv/player/build/brid.min.js"></script> 
+    <div class="sticky-video">
+        <div class="livestream">
+            <div class="livestream-wrapper">
+                <script type="text/javascript" src="https://services.brid.tv/player/build/brid.min.js"></script> 
                 <div id="Brid_11197595" class="brid" style="width:16;height:9;" > </div> 
                 <script type="text/javascript"> $bp("Brid_11197595", {"id":"38283","width":"16","height":"9","video":"1403286"}); </script>
             </div>
-            </div>
-            
-            
-        </div>
-    <div class="container-livestream-wrapper">
-    <container class="topbar-container topbar-container-display">
-            <!-- <div class="volver-a-ver"><p>VUÉLVELO A VER</p></div> -->
+        </div> 
+        <container class="topbar-container topbar-container-display">       
             <div class="topbar">
-                                <li><p class="guia-programas" data-target="#guia-de-tv" style="color: white" href="">Guía de TV</p></li>
-                                <li><p class="comentario-menu" data-target="#comentarios" style="color: white" href="">Comentarios</p><p><?php
-                                $comments_count = get_comments_number(); // Obtiene el número de comentarios
+                <li><p class="guia-programas" data-target="#guia-de-tv" style="color: white" href="">Guía de TV</p></li>
+                <li><p class="comentario-menu" data-target="#comentarios" style="color: white" href="">Comentarios</p><p><?php
+                $comments_count = get_comments_number(); // Obtiene el número de comentarios
 
-                                if ($comments_count != 0) {
-                                    echo '<p>(' . $comments_count . ')</p>';
-                                } else {
-                                    echo '<p>No hay comentarios aún.</p>';
-                                }
-                                ?></p></li>
-                                <li><p class="NA" data-target="#nAnteriores" style="color: white" href="">Noticieros Anteriores</p></li>
-                                <li><p class="AR" data-target="#aRebelde" style="color: white" href="<?php echo site_url('/deportes') ?>">Angel Rebelde</p></li>
-                                <li><p class="AC" data-target="#Acorralada" style="color: white" href="<?php echo site_url('/programas') ?>">Acorralada</p></li>
-                            
-                                
-                                <li><p class="AC" data-target="#tTorbellino" style="color: white" href="<?php echo site_url('/programas') ?>">Torrente un Torbellino</p></li>
-                                <li><p class="AC" data-target="#Jocelito" style="color: white" href="<?php echo site_url('/deportes') ?>">Jocelito la nueva era</p></li>
-                                
-                                <?php if(is_user_logged_in()){?>
-                                    <li class="" ><a style="color: white" href="<?php echo wp_logout_url('/') ?>">Salir</a></li>
-                                <?php } else { ?>
-                                    <li class="" ><a style="color: white" href="<?php echo esc_url(site_url('/wp-signup.php')) ?>"><i class="fa-solid fa-user"></i> Ingresar</a></li>
-                                <?php } ?>
+                if ($comments_count != 0) {
+                    echo '<p>(' . $comments_count . ')</p>';
+                } else {
+                    echo '<p>No hay comentarios aún.</p>';
+                }
+                ?></p></li>
+                <li><p class="NA" data-target="#nAnteriores" style="color: white" href="">Noticieros Anteriores</p></li>
+                <li><p class="AR" data-target="#cTuyo" style="color: white" href="">Mi Corazón es Tuyo</p></li>
+                <li><p class="AC" data-target="#Acorralada" style="color: white" href="">Acorralada</p></li>               
+                <li><p class="AC" data-target="#cPasion" style="color: white" href="">El Color de la Pasión</p></li>
+                <li><p class="AC" data-target="#Jocelito" style="color: white" href="">Jocelito la nueva era</p></li>
+                
+                <?php if(is_user_logged_in()){?>
+                <li class="" ><a style="color: white" href="<?php echo wp_logout_url('/') ?>">Salir</a></li>
+                <?php } else { ?>
+                <li class="" ><a style="color: white" href="<?php echo esc_url(site_url('/wp-signup.php')) ?>"><i class="fa-solid fa-user"></i> Ingresar</a></li>
+                <?php } ?>
                                 
             </div>
             <div class="overlay-topbar"></div>
-            </container>
+        </container>       
+    </div>
+    <div class="container-livestream-wrapper">
+        
         <div class="timetable">
-             <div class="timetable-wrapper" id="timetable"> 
+            <div class="timetable-wrapper" id="timetable"> 
                             <?php
                         
                            include 'tvguide.php';
@@ -69,13 +82,13 @@
                             $tiempo_faltante = $hora_fin_programa - $hora_actual;
                             $tiempo_faltante_minutos = round($tiempo_faltante / 60);
                             // Calcular la duración total del programa en segundos
-        $duracion_total_programa = ($programa['duracion'] * 60);
+                            $duracion_total_programa = ($programa['duracion'] * 60);
 
-        // Calcular el tiempo transcurrido del programa actual en segundos
-        $tiempo_transcurrido_segundos = $hora_actual - $hora_inicio_programa;
+                            // Calcular el tiempo transcurrido del programa actual en segundos
+                            $tiempo_transcurrido_segundos = $hora_actual - $hora_inicio_programa;
 
-        // Calcular el porcentaje de tiempo transcurrido
-        $porcentaje_transcurrido = ($tiempo_transcurrido_segundos / $duracion_total_programa) * 100;
+                            // Calcular el porcentaje de tiempo transcurrido
+                            $porcentaje_transcurrido = ($tiempo_transcurrido_segundos / $duracion_total_programa) * 100;
                             
 
                             if ($hora_actual >= $hora_inicio_programa && $hora_actual < $hora_fin_programa) {
@@ -111,18 +124,18 @@
                     </div>
                 </div>        
                 <div class="timeline">
-                <div class="active-program">
-                    <div>
-                        <h4>Estas Viendo</h4>
-                        <p><?php echo $programa_actual['nombre']; ?></p>
-                        
+                    <div class="active-program">
+                        <div>
+                            <h4>Estas Viendo</h4>
+                            <p><?php echo $programa_actual['nombre']; ?></p>
+                            
+                        </div>
+                        <div class="viendo-ahora">
+                            <div><p>Faltan <?php echo $tiempo_faltante_minutos ?> minutos </p></div>
+                            <progress value="<?php echo $porcentaje_transcurrido?>" max="100"></progress>
+                            <div class="envivo-timeline"><p>EN VIVO</p></div>
+                        </div>
                     </div>
-                    <div class="viendo-ahora">
-                        <div><p>Faltan <?php echo $tiempo_faltante_minutos ?> minutos </p></div>
-                        <progress value="<?php echo $porcentaje_transcurrido?>" max="100"></progress>
-                        <div class="envivo-timeline"><p>EN VIVO</p></div>
-                    </div>
-                </div>
                     <div class="item-middle">
                         <div>
                             <h4>A continuación</h4>
@@ -148,24 +161,19 @@
                             <p><?php echo $programa_otro['hora_inicio']; ?></p>
                         </div>
                     </div>    
-                    </div>
+                </div>
 
 
               
-              </div>
-           
-            </div>
-        <div class="livestream-homepage-container">
-            
+            </div>   
+        </div>
+        <div class="livestream-homepage-container">      
             <div data-content id="comentarios" class="comentarios">
                 <?php comments_template('/oromartv-comments.php'); ?>
-            </div>
-            
-            <div class="sidebar-livestream">
-            
-                        <container class="topbar-container">
-            
-            <div class="topbar">
+            </div>         
+            <div class="sidebar-livestream">          
+                <container class="topbar-container">          
+                    <div class="topbar">
                                 <li><p class="guia-programas" data-target="#guia-de-tv" style="color: white" href="">Guía de TV</p></li>
                                 <li class="comentario-menu"><p class="comentario-menu" data-target="#comentarios" style="color: white" href="">Comentarios</p><p><?php
                                 $comments_count = get_comments_number(); // Obtiene el número de comentarios
@@ -177,12 +185,12 @@
                                 }
                                 ?></p></li>
                                 <li><p class="NA" data-target="#nAnteriores" style="color: white" href="">Noticieros Anteriores</p></li>
-                                <li><p class="AR" data-target="#aRebelde" style="color: white" href="<?php echo site_url('/deportes') ?>">Angel Rebelde</p></li>
-                                <li><p class="AC" data-target="#Acorralada" style="color: white" href="<?php echo site_url('/programas') ?>">Acorralada</p></li>
+                                <li><p class="AR" data-target="#cTuyo" style="color: white" href="">Mi corazón es tuyo</p></li>
+                                <li><p class="AC" data-target="#Acorralada" style="color: white" href="">Acorralada</p></li>
                             
                                 
-                                <li><p class="AC" data-target="#tTorbellino" style="color: white" href="<?php echo site_url('/programas') ?>">Torrente un Torbellino</p></li>
-                                <li><p class="AC" data-target="#Jocelito" style="color: white" href="<?php echo site_url('/deportes') ?>">Jocelito la nueva era</p></li>
+                                <li><p class="AC" data-target="#cPasion" style="color: white" href="">El Color de la Pasión</p></li>
+                                <li><p class="AC" data-target="#Jocelito" style="color: white" href="">Jocelito la nueva era</p></li>
                                 
                                 <?php if(is_user_logged_in()){?>
                                     <li class="" ><a style="color: white" href="<?php echo wp_logout_url('/') ?>">Salir</a></li>
@@ -190,10 +198,10 @@
                                     <li class="" ><a style="color: white" href="<?php echo esc_url(site_url('/wp-signup.php')) ?>"><i class="fa-solid fa-user"></i> Ingresar</a></li>
                                 <?php } ?>
                                 
-            </div>
-            <div class="overlay-topbar"></div>
-            </container>
-            <div data-content id="guia-de-tv" class="guia-hoy">
+                    </div>
+                    <div class="overlay-topbar"></div>
+                </container>
+                <div data-content id="guia-de-tv" class="guia-hoy">
                                 <?php
                                     // Información de ejemplo de programas y sus horarios
                                      include 'tvguide.php';
@@ -234,6 +242,7 @@
                                         $homePagePosts = new WP_Query(array(
                                         'posts_per_page' => 10,
                                         'category_name' => 'noticieros-anteriores',
+                                        'post_type' => 'video',
                                                                 
                                         
                                         ));
@@ -259,13 +268,12 @@
                                 <?php }?>
                                 
                         </section>
-                        <section class="list-post" data-content id="aRebelde" >
+                        <section class="list-post" data-content id="cTuyo" >
                                         <?php
                                         $homePagePosts = new WP_Query(array(
                                         'posts_per_page' => 10,
-                                        'category_name' => 'angel-rebelde',
-                                                                
-                                        
+                                        'category_name' => 'mi-corazon-es-tuyo',
+                                        'post_type' => 'video'
                                         ));
                                         while($homePagePosts->have_posts()) {
                                         $homePagePosts->the_post(); ?>
@@ -294,6 +302,7 @@
                                         $homePagePosts = new WP_Query(array(
                                         'posts_per_page' => 10,
                                         'category_name' => 'acorralada',
+                                        'post_type' => 'video'
                                                                 
                                         
                                         ));
@@ -319,11 +328,12 @@
                                 <?php }?>
                                 
                         </section>
-                        <section class="list-post" data-content id="tTorbellino" >
+                        <section class="list-post" data-content id="cPasion" >
                                         <?php
                                         $homePagePosts = new WP_Query(array(
                                         'posts_per_page' => 10,
-                                        'category_name' => 'torrente',
+                                        'category_name' => 'el-color-de-la-pasion-2',
+                                        'post_type' => 'video'
                                                                 
                                         
                                         ));
@@ -380,7 +390,7 @@
                                 
                         </section>
                         <section class="recent-videos">
-                            <h2 style="color: white;" >VIDEOS RECIENTES</h2><br>
+                            <h2 style="color: white;" >LO MÁS RECIENTE</h2><br>
                         <?php
                                         $homePagePosts = new WP_Query(array(
                                         'posts_per_page' => 10,

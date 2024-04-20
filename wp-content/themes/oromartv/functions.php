@@ -23,14 +23,7 @@ add_theme_support( 'post-thumbnails' );
     add_image_size('page-banner', 1000, 800, true);
     add_image_size('square', 700, 700, true);
 
-function guia_de_programacion(){
-    if(is_page('livestream')){
-        wp_enqueue_script('guia_de_tv', get_template_directory_uri() . '/guia.js', NULL, '1.0', true);
-        wp_enqueue_script('comentarios', get_template_directory_uri() . '/comentarios.js', NULL, '1.0', true);   
-    }
-}
-
-add_action('wp_enqueue_scripts', 'guia_de_programacion' );     
+     
 
      // Función para contar visualizaciones de un post.
 function set_post_views() {
@@ -148,7 +141,7 @@ function registrar_custom_post_type_video() {
         'capability_type'     => 'post',
         'hierarchical'        => false,
         'taxonomies'         => array('category', 'post_tag'),
-        'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+        'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
         'menu_icon'           => 'dashicons-video-alt3', // Puedes cambiar esto según tu preferencia.
     );
 
@@ -290,6 +283,18 @@ function load_post_template( $template ) {
 }
 add_filter( 'single_template', 'load_post_template' );
 
+// Cambiar el correo electrónico del remitente
+add_filter('wp_mail_from', 'tu_correo_remitente');
+function tu_correo_remitente($email) {
+    return 'contacto@oromartv.com'; // Cambia esto por tu dirección de correo electrónico deseada
+}
+
+// Cambiar el nombre del remitente
+add_filter('wp_mail_from_name', 'nombre_remitente_personalizado');
+function nombre_remitente_personalizado($name) {
+    return 'www.oromartv.com'; // Cambia esto por el nombre que desees mostrar
+}
+
+
+
 ?>
-
-
