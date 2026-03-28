@@ -26,7 +26,7 @@
                                 <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/imagenes/OTV400.png" alt=""></a>
                             </div>
                             <nav>
-                                <li><a style="color: white" href="<?php echo site_url('/noticiasoromar') ?>">NOTICIAS OROMAR </a></li>
+                                <li><a style="color: white" href="<?php echo site_url('/noticiasoromar') ?>">NOTICIAS</a></li>
                                 <li><a style="color: white" href="https://oromartv.com/category/deportes-nti/">DEPORTES OROMAR</a></li>
                                 <li><a style="color: white" href="<?php echo site_url('/noticieros') ?>">NOTICIEROS ANTERIORES</a></li>   
                                 <li><a style="color: white" href="<?php echo site_url('/reportes') ?>">REPORTE DE SEÑAL</a></li>       
